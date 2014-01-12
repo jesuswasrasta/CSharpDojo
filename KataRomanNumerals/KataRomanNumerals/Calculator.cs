@@ -19,6 +19,11 @@ namespace KataRomanNumerals
 				return "0";
 			}
 
+			if (number > 9999)
+			{
+				throw new Exception("I will not translate numbers greater than 9999!");
+			}
+
 			var result = new StringBuilder();
 			while (number >= 1000)
 			{

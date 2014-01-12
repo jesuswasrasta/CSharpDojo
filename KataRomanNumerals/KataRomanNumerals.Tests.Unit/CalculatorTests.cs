@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region Usings
+using System;
 
 using NUnit.Framework;
+
+
+#endregion
 
 
 namespace KataRomanNumerals.Tests.Unit
 {
 	[TestFixture]
 	public class CalculatorTests
-    {
+	{
 		[TestCase(0, Result = "0")]
 		[TestCase(1, Result = "I")]
 		[TestCase(2, Result = "II")]
@@ -42,11 +43,21 @@ namespace KataRomanNumerals.Tests.Unit
 		[TestCase(500, Result = "D")]
 		[TestCase(999, Result = "CMXCIX")]
 		[TestCase(1000, Result = "M")]
-		[TestCase(1001, Result = "MI")]
+		[TestCase(2000, Result = "MM")]
+		[TestCase(3000, Result = "MMM")]
+		[TestCase(4000, Result = "MMMM")]
+		[TestCase(9000, Result = "MMMMMMMMM")]
 		public string Calculator_GetRoman(int number)
 		{
 			var calculator = new Calculator();
 			return calculator.GetRoman(number);
+		}
+		
+		[Test]
+		public void Calculator_GetRoman_NumberGreaterThan9999_ThrowsException()
+		{
+			var calculator = new Calculator();
+			Assert.Throws<Exception>(() => calculator.GetRoman(10000));
 		}
 	}
 }
