@@ -1,6 +1,8 @@
 ﻿#region Usings
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 
 #endregion
@@ -17,38 +19,74 @@ namespace KataRomanNumerals
 				return "0";
 			}
 
-			var result = string.Empty;
-			if (number > 4)
+			var result = new StringBuilder();
+			while (number >= 1000)
 			{
-				result = "V";
+				result.Append("M");
+				number = number - 1000;
 			}
-			else if (number > 3)
+			if (number >= 900)
 			{
-				result = "IV";
+				result.Append("CM");
+				number = number - 900;
 			}
-			else
+			if (number >= 500)
 			{
-				result += GetRomanFrom1to3(number);
+				result.Append("D");
+				number = number - 500;
+			}
+			if (number >= 400)
+			{
+				result.Append("CD");
+				number = number - 400;
+			}
+			while (number >= 100)
+			{
+				result.Append("C");
+				number = number - 100;
+			}
+			if (number >= 90)
+			{
+				result.Append("XC");
+				number = number - 90;
+			}
+			if (number >= 50)
+			{
+				result.Append("L");
+				number = number - 50;
+			}
+			if (number >= 40)
+			{
+				result.Append("XL");
+				number = number - 40;
+			}
+			while (number >= 10)
+			{
+				result.Append("X");
+				number = number - 10;
+			}
+			if (number >= 9)
+			{
+				result.Append("IX");
+				number = number - 9;
+			}
+			if (number >= 5)
+			{
+				result.Append("V");
+				number = number - 5;
+			}
+			if (number >= 4)
+			{
+				result.Append("IV");
+				number = number - 4;
+			}
+			while (number >= 1)
+			{
+				result.Append("I");
+				number = number - 1;
 			}
 
-			return result;
+			return result.ToString();
 		}
-
-
-		#region Private Methods
-		private string GetRomanFrom1to3(int number)
-		{
-			if (number > 3)
-			{
-				throw new ArgumentOutOfRangeException("number", "Number have to be 1 < 3");
-			}
-			string result = string.Empty;
-			for (int i = 0; i < number; i++)
-			{
-				result += "I";
-			}
-			return result;
-		}
-		#endregion
 	}
 }
