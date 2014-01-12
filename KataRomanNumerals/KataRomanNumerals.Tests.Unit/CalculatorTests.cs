@@ -73,5 +73,12 @@ namespace KataRomanNumerals.Tests.Unit
 			var calculator = new Calculator();
 			Assert.IsTrue(calculator.GetRoman(8) == "VIII");
 		}
+		
+		[Test]
+		public void Calculator_GetRoman_9_Returns_VII()
+		{
+			var calculator = new Calculator();
+			Assert.IsTrue(calculator.GetRoman(9) == "IX");
+		}
 	}
 }
