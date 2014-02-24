@@ -43,6 +43,7 @@ namespace KataRomanNumerals.Tests.Unit
 		[TestCase(500, Result = "D")]
 		[TestCase(999, Result = "CMXCIX")]
 		[TestCase(1000, Result = "M")]
+		[TestCase(1666, Result = "MDCLXVI")]
 		[TestCase(2000, Result = "MM")]
 		[TestCase(3000, Result = "MMM")]
 		[TestCase(4000, Result = "MMMM")]
