@@ -12,6 +12,37 @@ namespace KataRomanNumerals
 {
 	public class Calculator
 	{
+		#region Fields
+		private readonly List<RomanNumeral> _romanSystem;
+		#endregion
+
+
+		#region Constructors
+		public Calculator()
+		{
+			_romanSystem = new List<RomanNumeral>
+			{
+				new RomanNumeral(0, "0"),
+				new RomanNumeral(1, "I"),
+				new RomanNumeral(4, "IV"),
+				new RomanNumeral(5, "V"),
+				new RomanNumeral(9, "IX"),
+				new RomanNumeral(10, "X"),
+				new RomanNumeral(40, "XL"),
+				new RomanNumeral(50, "L"),
+				new RomanNumeral(90, "XC"),
+				new RomanNumeral(100, "C"),
+				new RomanNumeral(400, "CD"),
+				new RomanNumeral(500, "D"),
+				new RomanNumeral(900, "CM"),
+				new RomanNumeral(1000, "M"),
+				new RomanNumeral(10000, "-"),
+			};
+		}
+		#endregion
+
+
+		#region Public Methods
 		public string GetRoman(int number)
 		{
 			if (number == 0)
@@ -93,5 +124,36 @@ namespace KataRomanNumerals
 
 			return result.ToString();
 		}
+
+		public void GetRoman2(int number, ref string roman)
+		{
+			if (number == 0)
+			{
+				if (string.IsNullOrEmpty(roman))
+				{
+					roman = "0";
+				}
+				return;
+			}
+
+			foreach (var romanNumeral in _romanSystem.OrderByDescending(r => r.Value))
+			{
+				if (number >= romanNumeral.Value)
+				{
+					roman += romanNumeral.Representation;
+					GetRoman2(number - romanNumeral.Value, ref roman);
+					break;
+				}
+			}
+		}
+
+		public int GetNumber(string roman)
+		{
+			var result = 0;
+
+
+			return result;
+		}
+		#endregion
 	}
 }
