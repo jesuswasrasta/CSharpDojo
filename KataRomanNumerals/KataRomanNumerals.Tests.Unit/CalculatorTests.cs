@@ -130,10 +130,42 @@ namespace KataRomanNumerals.Tests.Unit
 		[TestCase("IV", Result = 4)]
 		[TestCase("V", Result = 5)]
 		[TestCase("VI", Result = 6)]
+		[TestCase("VII", Result = 7)]
+		[TestCase("VIII", Result = 8)]
+		[TestCase("IX", Result = 9)]
+		[TestCase("X", Result = 10)]
+		[TestCase("XI", Result = 11)]
+		[TestCase("XII", Result = 12)]
+		[TestCase("XIII", Result = 13)]
+		[TestCase("XIV", Result = 14)]
+		[TestCase("XV", Result = 15)]
+		[TestCase("XVI", Result = 16)]
+		[TestCase("XVII", Result = 17)]
+		[TestCase("XVIII", Result = 18)]
+		[TestCase("XIX", Result = 19)]
+		[TestCase("XX", Result = 20)]
+		[TestCase("XXX", Result = 30)]
+		[TestCase("XLVII", Result = 47)]
+		[TestCase("L", Result = 50)]
+		[TestCase("LXXIII", Result = 73)]
+		[TestCase("LXXXIX", Result = 89)]
+		[TestCase("C", Result = 100)]
+		[TestCase("CCCXXVII", Result = 327)]
+		[TestCase("CDXXIII", Result = 423)]
+		[TestCase("D", Result = 500)]
+		[TestCase("CMXCIX", Result = 999)]
+		[TestCase("M", Result = 1000)]
+		[TestCase("MDCLXVI", Result = 1666)]
+		[TestCase("MM", Result = 2000)]
+		[TestCase("MMM", Result = 3000)]
+		[TestCase("MMMM", Result = 4000)]
+		[TestCase("MMMMMMMMM", Result = 9000)]
 		public int Calculator_GetNumber(string roman)
 		{
+			int number = 0;
 			var calculator = new Calculator();
-			return calculator.GetNumber(roman);
+			calculator.GetNumber(roman, ref number);
+			return number;
 		}
 		#endregion
 	}

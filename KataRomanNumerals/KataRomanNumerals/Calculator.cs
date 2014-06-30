@@ -147,12 +147,32 @@ namespace KataRomanNumerals
 			}
 		}
 
-		public int GetNumber(string roman)
+		public void GetNumber(string roman, ref int number)
 		{
-			var result = 0;
+			if (string.IsNullOrEmpty(roman) || roman.Equals("0"))
+			{
+				return;
+			}
 
+			foreach (var romanNumeral in _romanSystem.OrderBy(r => r.Value))
+			{
+				if (romanNumeral.Representation.Length > roman.Length)
+				{
+					continue;
+				}
+				
+				var text = roman.Substring(roman.Length - romanNumeral.Representation.Length, romanNumeral.Representation.Length);
+				if (text.Equals(romanNumeral.Representation))
+				{
+					number += romanNumeral.Value;
 
-			return result;
+					if (roman.Length >= 2)
+					{
+						GetNumber(roman.Substring(0, roman.Length - romanNumeral.Representation.Length), ref number);
+					}
+					break;
+				}
+			}
 		}
 		#endregion
 	}
