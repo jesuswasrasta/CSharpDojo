@@ -17,5 +17,12 @@ namespace KataGameOfLife.Tests
 			var cell = Cell.NewDeadCell();
 			Assert.IsFalse(cell.IsAlive);
 		}
-    }
+
+		[Test]
+		public void Cell_NewLivingCell_ReturnsDeadCell()
+		{
+			var cell = Cell.NewLivingCell();
+			Assert.IsTrue(cell.IsAlive);
+		}
+	}
 }

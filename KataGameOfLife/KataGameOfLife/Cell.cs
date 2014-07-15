@@ -19,6 +19,11 @@
 		{
 			return new Cell {IsAlive = false};
 		}
+
+		public static Cell NewLivingCell()
+		{
+			return new Cell { IsAlive = true };
+		}
 		#endregion
 	}
 }
