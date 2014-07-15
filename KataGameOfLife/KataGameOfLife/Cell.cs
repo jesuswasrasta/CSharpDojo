@@ -22,14 +22,16 @@
 
 		public static Cell NewLivingCell()
 		{
-			return new Cell { IsAlive = true };
+			return new Cell {IsAlive = true};
 		}
 		#endregion
 
 
-		public void Neighbors(int neighBors)
+		#region Public Methods
+		public void LivingNeighbors(int neighBors)
 		{
 			IsAlive = neighBors >= 2 & neighBors < 4;
 		}
+		#endregion
 	}
 }

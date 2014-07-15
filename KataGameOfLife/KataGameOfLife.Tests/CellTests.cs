@@ -11,6 +11,8 @@ namespace KataGameOfLife.Tests
 	[TestFixture]
     public class CellTests
     {
+		//http://en.wikipedia.org/wiki/Conway's_Game_of_Life#Rules
+
 		[Test]
 		public void Cell_NewDeadCell_ReturnsDeadCell()
 		{
@@ -31,10 +33,10 @@ namespace KataGameOfLife.Tests
 		[TestCase(5, Result = false)]
 		[TestCase(2, Result = true)]
 		[TestCase(3, Result = true)]
-		public bool Cell_NeighborsTest(int neighBors)
+		public bool LivingCell_LivingNeighborsTest(int livingNeighBors)
 		{
-			var cell = new Cell();
-			cell.Neighbors(neighBors);
+			var cell = Cell.NewLivingCell();
+			cell.LivingNeighbors(livingNeighBors);
 			return cell.IsAlive;
 		}
 	}
