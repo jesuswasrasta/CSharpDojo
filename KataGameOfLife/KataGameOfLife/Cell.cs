@@ -24,6 +24,19 @@
 		{
 			return new Cell {IsAlive = true};
 		}
+
+		public static Cell FromChar(char aChar)
+		{
+			switch (aChar)
+			{
+				case 'O':
+					return NewLivingCell();
+				case '.':
+					return NewDeadCell();
+				default:
+					return null;
+			}
+		}
 		#endregion
 
 
@@ -31,6 +44,14 @@
 		public void LivingNeighbors(int neighBors)
 		{
 			IsAlive = neighBors >= 2 & neighBors < 4;
+		}
+		#endregion
+
+
+		#region Overridden Methods
+		public override string ToString()
+		{
+			return IsAlive ? "0" : ".";
 		}
 		#endregion
 	}
