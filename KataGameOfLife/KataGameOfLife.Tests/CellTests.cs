@@ -39,5 +39,13 @@ namespace KataGameOfLife.Tests
 			cell.LivingNeighbors(livingNeighBors);
 			return cell.IsAlive;
 		}
+
+		[Test]
+		public void DeadCell_LivingNeighborsTest()
+		{
+			var cell = Cell.NewDeadCell();
+			cell.LivingNeighbors(3);
+			Assert.IsTrue(cell.IsAlive);
+		}
 	}
 }
