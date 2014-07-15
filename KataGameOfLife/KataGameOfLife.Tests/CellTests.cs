@@ -25,12 +25,17 @@ namespace KataGameOfLife.Tests
 			Assert.IsTrue(cell.IsAlive);
 		}
 
-		[Test]
-		public void LivingCell_DiesByLoneliness()
+		[TestCase(0, Result = false)]
+		[TestCase(1, Result = false)]
+		[TestCase(4, Result = false)]
+		[TestCase(5, Result = false)]
+		[TestCase(2, Result = true)]
+		[TestCase(3, Result = true)]
+		public bool Cell_NeighborsTest(int neighBors)
 		{
-			var cell = Cell.NewLivingCell();
-			cell.Neighbors(0);
-			Assert.IsFalse(cell.IsAlive);
+			var cell = new Cell();
+			cell.Neighbors(neighBors);
+			return cell.IsAlive;
 		}
 	}
 }

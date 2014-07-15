@@ -29,10 +29,7 @@
 
 		public void Neighbors(int neighBors)
 		{
-			if (neighBors == 0)
-			{
-				IsAlive = false;
-			}
+			IsAlive = neighBors >= 2 & neighBors < 4;
 		}
 	}
 }
