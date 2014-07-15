@@ -25,5 +25,14 @@
 			return new Cell { IsAlive = true };
 		}
 		#endregion
+
+
+		public void Neighbors(int neighBors)
+		{
+			if (neighBors == 0)
+			{
+				IsAlive = false;
+			}
+		}
 	}
 }

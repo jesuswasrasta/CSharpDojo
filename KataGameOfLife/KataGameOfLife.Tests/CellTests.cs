@@ -24,5 +24,13 @@ namespace KataGameOfLife.Tests
 			var cell = Cell.NewLivingCell();
 			Assert.IsTrue(cell.IsAlive);
 		}
+
+		[Test]
+		public void LivingCell_DiesByLoneliness()
+		{
+			var cell = Cell.NewLivingCell();
+			cell.Neighbors(0);
+			Assert.IsFalse(cell.IsAlive);
+		}
 	}
 }
