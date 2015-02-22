@@ -10,43 +10,24 @@ namespace KataFizzBuzz.Tests
 	[TestFixture]
     public class FizzBuzzerTests
     {
-		[TestCase(3)]
-		[TestCase(6)]
-		[TestCase(12)]
-		[TestCase(27)]
-		public void FizzBuzzer_Multiple_Of_3_Returns_Fizz(int number)
+		[TestCase(1, "1")]
+		[TestCase(2, "2")]
+		[TestCase(3, "Fizz")]
+		[TestCase(12, "Fizz")]
+		[TestCase(5, "Buzz")]
+		[TestCase(10, "Buzz")]
+		[TestCase(15, "FizzBuzz")]
+		[TestCase(90, "FizzBuzz")]
+		public void FizzBuzzer_TheUltimateTest(int number, string expectedString)
 		{
-			const string expected = "Fizz";
 			var fizzBuzzer = new FizzBuzzer();
+			fizzBuzzer.AddRule(new MultipleOf3Rule());
+			fizzBuzzer.AddRule(new MultipleOf5Rule());
+			fizzBuzzer.AddRule(new MultipleOf15Rule());
+
 			var result = fizzBuzzer.Say(number);
 
-			Assert.AreEqual(expected, result);
-		}
-
-		[TestCase(5)]
-		[TestCase(10)]
-		[TestCase(645)]
-		[TestCase(35)]
-		public void FizzBuzzer_5_Returns_Fizz(int number)
-		{
-			const string expected = "Buzz";
-			var fizzBuzzer = new FizzBuzzer();
-			var result = fizzBuzzer.Say(5);
-
-			Assert.AreEqual(expected, result);
-		}
-
-		[TestCase(15)]
-		[TestCase(30)]
-		[TestCase(150)]
-		[TestCase(90)]
-		public void FizzBuzzer_15_Returns_FizzBuzz(int number)
-		{
-			const string expected = "FizzBuzz";
-			var fizzBuzzer = new FizzBuzzer();
-			var result = fizzBuzzer.Say(15);
-
-			Assert.AreEqual(expected, result);
+			Assert.AreEqual(expectedString, result);
 		}
     }
 }
