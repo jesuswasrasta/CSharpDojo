@@ -14,7 +14,7 @@
 		#endregion
 
 
-		#region Factroy Methods
+		#region Factory Methods
 		public static Cell NewDeadCell()
 		{
 			return new Cell {IsAlive = false};

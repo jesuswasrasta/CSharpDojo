@@ -11,7 +11,9 @@ namespace KataGameOfLife
 {
 	public class Universe
 	{
+		#region Properties
 		public IList<Cell> Cells { get; private set; }
+		#endregion
 
 
 		#region Constructors
@@ -28,12 +30,12 @@ namespace KataGameOfLife
 				return;
 			}
 
-			var lines = initialState.Split(new[] {'\n', '\r'});
+			var lines = initialState.Split('\n', '\r');
 			foreach (var line in lines)
 			{
-				foreach (var aChar in line.ToCharArray())
+				foreach (var character in line.ToCharArray())
 				{
-					var cell = Cell.FromChar(aChar);
+					var cell = Cell.FromChar(character);
 					if (cell == null)
 					{
 						Cells.Clear();
