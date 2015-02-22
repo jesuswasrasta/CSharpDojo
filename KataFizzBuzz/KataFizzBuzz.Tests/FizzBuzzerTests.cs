@@ -10,6 +10,7 @@ namespace KataFizzBuzz.Tests
 	[TestFixture]
     public class FizzBuzzerTests
     {
+		[TestCase(0, "0")]
 		[TestCase(1, "1")]
 		[TestCase(2, "2")]
 		[TestCase(3, "Fizz")]
