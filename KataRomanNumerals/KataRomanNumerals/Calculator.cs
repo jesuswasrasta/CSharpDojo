@@ -135,6 +135,10 @@ namespace KataRomanNumerals
 				}
 				return;
 			}
+			if (number > 9999)
+			{
+				throw new Exception("I will not translate numbers greater than 9999!");
+			}
 
 			foreach (var romanNumeral in _romanSystem.OrderByDescending(r => r.Value))
 			{
