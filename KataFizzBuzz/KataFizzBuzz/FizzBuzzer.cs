@@ -1,13 +1,23 @@
-﻿using System;
-
-
-namespace KataFizzBuzz
+﻿namespace KataFizzBuzz
 {
 	public class FizzBuzzer
 	{
 		public string Say(int number)
 		{
-			throw new NotImplementedException();
+			if (number % 15 == 0)
+			{
+				return "FizzBuzz";
+			}
+			if (number % 5 == 0)
+			{
+				return "Buzz";
+			}
+			if (number % 3 == 0)
+			{
+				return "Fizz";
+			}
+
+			return number.ToString();
 		}
 	}
 }
