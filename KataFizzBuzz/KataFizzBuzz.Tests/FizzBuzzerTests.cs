@@ -21,9 +21,9 @@ namespace KataFizzBuzz.Tests
 		public void FizzBuzzer_TheUltimateTest(int number, string expectedString)
 		{
 			var fizzBuzzer = new FizzBuzzer();
-			fizzBuzzer.AddRule(new MultipleOf3Rule());
-			fizzBuzzer.AddRule(new MultipleOf5Rule());
-			fizzBuzzer.AddRule(new MultipleOf15Rule());
+			fizzBuzzer.AddRule(new MultipleRule(3, "Fizz"));
+			fizzBuzzer.AddRule(new MultipleRule(5, "Buzz"));
+			fizzBuzzer.AddRule(new MultipleRule(15, "FizzBuzz"));
 
 			var result = fizzBuzzer.Say(number);
 

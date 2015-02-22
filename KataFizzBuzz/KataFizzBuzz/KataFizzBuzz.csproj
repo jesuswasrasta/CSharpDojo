@@ -60,9 +60,7 @@
     <Compile Include="FizzBuzzerQuickAndDirty.cs" />
     <Compile Include="IFizzBuzzer.cs" />
     <Compile Include="IRule.cs" />
-    <Compile Include="MultipleOf15Rule.cs" />
-    <Compile Include="MultipleOf5Rule.cs" />
-    <Compile Include="MultipleOf3Rule.cs" />
+    <Compile Include="MultipleRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
