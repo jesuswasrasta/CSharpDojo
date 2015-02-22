@@ -28,7 +28,7 @@ namespace KataFizzBuzz
 		#region Public Methods
 		public bool IsApplicable(int number)
 		{
-			return number%Divisor == 0;
+			return number != 0 && Divisor != 0 && number%Divisor == 0;
 		}
 
 		public string GetTheWord(int number)
