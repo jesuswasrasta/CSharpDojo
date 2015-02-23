@@ -1,6 +1,9 @@
-﻿using System;
+﻿#region Usings
 using System.Collections.Generic;
 using System.Linq;
+
+
+#endregion
 
 
 namespace KataFibonacci
@@ -9,9 +12,14 @@ namespace KataFibonacci
 	{
 		public string GetSequence(int numberOfElements)
 		{
+			if (numberOfElements < 1)
+			{
+				return string.Empty;
+			}
+
 			if (numberOfElements == 1)
 			{
-				return "1";	
+				return "1";
 			}
 			if (numberOfElements == 2)
 			{

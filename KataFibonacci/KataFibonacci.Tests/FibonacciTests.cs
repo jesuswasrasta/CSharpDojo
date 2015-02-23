@@ -10,32 +10,19 @@ namespace KataFibonacci.Tests
 {
     public class FibonacciTests
     {
-		[Test]
-		public void Fibonacci_Get_FirstElements_Returns_1()
+		[TestCase(-1, "")]
+		[TestCase(0,"")]
+		[TestCase(1, "1")]
+		[TestCase(2, "1,1")]
+		[TestCase(3, "1,1,2")]
+		[TestCase(4, "1,1,2,3")]
+		[TestCase(5, "1,1,2,3,5")]
+		[TestCase(6, "1,1,2,3,5,8")]
+		[TestCase(7, "1,1,2,3,5,8,13")]
+	    public void Fibonacci_Get_First_5_Elements_Returns_11235(int numberOfElements, string expectedResult)
 		{
-			const string expectedResult = "1";
 			var fibonacci = new Fibonacci();
-			var result = fibonacci.GetSequence(1);
-
-			Assert.AreEqual(expectedResult, result);
-		}
-
-		[Test]
-		public void Fibonacci_Get_First_3_Elements_Returns_112()
-		{
-			const string expectedResult = "1,1,2";
-			var fibonacci = new Fibonacci();
-			var result = fibonacci.GetSequence(3);
-
-			Assert.AreEqual(expectedResult, result);
-		}
-
-		[Test]
-	    public void Fibonacci_Get_First_5_Elements_Returns_11235()
-		{
-			const string expectedResult = "1,1,2,3,5";
-			var fibonacci = new Fibonacci();
-			var result = fibonacci.GetSequence(5);
+			var result = fibonacci.GetSequence(numberOfElements);
 
 			Assert.AreEqual(expectedResult, result);
 		}
