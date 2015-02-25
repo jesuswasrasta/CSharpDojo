@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataStringCalculator", "KataStringCalculator.csproj", "{8A033606-86C2-4ABD-AFE6-B3B53C659374}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataStringCalculator", "KataStringCalculator\KataStringCalculator.csproj", "{8A033606-86C2-4ABD-AFE6-B3B53C659374}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A6C479CA-2A38-476A-80F2-3F413BD9D97A}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataStringCalculator.Tests.Acceptance", "..\KataStringCalculator.Tests.Acceptance\KataStringCalculator.Tests.Acceptance.csproj", "{797D6D91-38A8-4CD9-9C59-341B5E6E47A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataStringCalculator.Tests.Acceptance", "KataStringCalculator.Tests.Acceptance\KataStringCalculator.Tests.Acceptance.csproj", "{797D6D91-38A8-4CD9-9C59-341B5E6E47A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
