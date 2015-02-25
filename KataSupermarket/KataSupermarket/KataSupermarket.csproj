@@ -57,7 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Checkout.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="ICheckout.cs" />
+    <Compile Include="IProductRule.cs" />
+    <Compile Include="ProductRule.cs" />
+    <Compile Include="ProductWithoutPriceException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
