@@ -19,7 +19,7 @@ namespace KataStringCalculator.Tests.Acceptance
 		{
 			ScenarioContext.Current.Add("stringa", string.Empty);
 		}
-
+		
 		[When(@"eseguo il calcolo")]
 		public void QuandoEseguoIlCalcolo()
 		{

@@ -19,8 +19,8 @@ namespace KataStringCalculator.Tests.Acceptance
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Calcolo della somma di una sequnza di numeri")]
-    public partial class CalcoloDellaSommaDiUnaSequnzaDiNumeriFeature
+    [NUnit.Framework.DescriptionAttribute("Calcolo della somma di una sequenza di numeri")]
+    public partial class CalcoloDellaSommaDiUnaSequenzaDiNumeriFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -32,8 +32,8 @@ namespace KataStringCalculator.Tests.Acceptance
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("it-IT"), "Calcolo della somma di una sequnza di numeri", "Al fine di ottenere il risultato di una addizione\nIn qualità di calcolatore \nVogl" +
-                    "io calcolare la somma di una sequenza di numeri separati da virgola", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("it-IT"), "Calcolo della somma di una sequenza di numeri", "Al fine di ottenere il risultato di una addizione\r\nIn qualità di calcolatore \r\nVo" +
+                    "glio calcolare la somma di una sequenza di numeri separati da virgola", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,10 +66,10 @@ namespace KataStringCalculator.Tests.Acceptance
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("stringa vuota")]
-        public virtual void StringaVuota()
+        [NUnit.Framework.DescriptionAttribute("se la sequenza è vuota, allora il risultato è 0")]
+        public virtual void SeLaSequenzaEVuotaAlloraIlRisultatoE0()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("stringa vuota", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("se la sequenza è vuota, allora il risultato è 0", ((string[])(null)));
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
