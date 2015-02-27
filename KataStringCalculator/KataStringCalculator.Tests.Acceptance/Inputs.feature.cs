@@ -81,6 +81,23 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("se la sequenza è \"1\", allora il risultato è 1")]
+        public virtual void SeLaSequenzaE1AlloraIlRisultatoE1()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("se la sequenza è \"1\", allora il risultato è 1", ((string[])(null)));
+#line 11
+this.ScenarioSetup(scenarioInfo);
+#line 12
+ testRunner.Given("la seguente stringa:\"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Data ");
+#line 13
+ testRunner.When("eseguo il calcolo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line 14
+ testRunner.Then("il risultato è:1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Allora ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

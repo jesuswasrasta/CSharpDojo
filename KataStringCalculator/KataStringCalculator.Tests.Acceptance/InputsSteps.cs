@@ -19,7 +19,13 @@ namespace KataStringCalculator.Tests.Acceptance
 		{
 			ScenarioContext.Current.Add("stringa", string.Empty);
 		}
-		
+
+		[Given(@"la seguente stringa:""(.*)""")]
+		public void DatoLaSeguenteStringa(string p0)
+		{
+			ScenarioContext.Current.Add("stringa", p0);
+		}
+
 		[When(@"eseguo il calcolo")]
 		public void QuandoEseguoIlCalcolo()
 		{

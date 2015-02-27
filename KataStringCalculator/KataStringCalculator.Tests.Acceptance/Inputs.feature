@@ -7,3 +7,9 @@ Scenario: se la sequenza è vuota, allora il risultato è 0
 	Data una stringa vuota
 	Quando eseguo il calcolo
 	Allora il risultato è:0
+
+Scenario: se la sequenza è "1", allora il risultato è 1
+	Data la seguente stringa:"1"
+	Quando eseguo il calcolo
+	Allora il risultato è:1
+
