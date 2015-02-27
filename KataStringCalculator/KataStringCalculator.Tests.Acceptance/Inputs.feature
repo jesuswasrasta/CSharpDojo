@@ -34,3 +34,11 @@ Schema dello scenario: se la sequenza contiene due numeri separati da virgola, a
 	| 145,23  | 168       |
 	| 1234,2  | 1236      |
 
+Schema dello scenario: se la sequenza contiene diversi numeri separati da virgola, allora il risultato è la somma di quei numeri
+	Data la seguente stringa:<Stringa>
+	Quando eseguo il calcolo
+	Allora il risultato è:<Risultato>
+	Esempi:
+	| Stringa     | Risultato |
+	| 1,2,3,4,5,6 | 21        |
+	| 0,10,33,456 | 499       |

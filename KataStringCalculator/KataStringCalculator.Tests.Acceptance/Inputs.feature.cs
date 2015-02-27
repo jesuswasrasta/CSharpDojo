@@ -129,6 +129,27 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("se la sequenza contiene diversi numeri separati da virgola, allora il risultato è" +
+            " la somma di quei numeri")]
+        [NUnit.Framework.TestCaseAttribute("1,2,3,4,5,6", "21", null)]
+        [NUnit.Framework.TestCaseAttribute("0,10,33,456", "499", null)]
+        public virtual void SeLaSequenzaContieneDiversiNumeriSeparatiDaVirgolaAlloraIlRisultatoELaSommaDiQueiNumeri(string stringa, string risultato, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("se la sequenza contiene diversi numeri separati da virgola, allora il risultato è" +
+                    " la somma di quei numeri", exampleTags);
+#line 37
+this.ScenarioSetup(scenarioInfo);
+#line 38
+ testRunner.Given(string.Format("la seguente stringa:{0}", stringa), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Data ");
+#line 39
+ testRunner.When("eseguo il calcolo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line 40
+ testRunner.Then(string.Format("il risultato è:{0}", risultato), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Allora ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

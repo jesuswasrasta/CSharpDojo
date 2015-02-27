@@ -14,19 +14,14 @@ namespace KataStringCalculator
 
 			//nando20150227: work incrementally... This code smells like rotten eggs and works only for 1 or 2 numbers.
 			var result = 0;
-			var number1 = 0;
-			var number2 = 0;
-			var numbers = inputString.Split(new[] {','}, StringSplitOptions.RemoveEmptyEntries);
-			if (numbers.Length >= 1)
+			var tempNumber = 0;
+			var numbers = inputString.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+			foreach (var number in numbers)
 			{
-				int.TryParse(numbers[0], out number1);	
+				int.TryParse(number, out tempNumber);
+				result += tempNumber;
 			}
-			if (numbers.Length >= 2)
-			{
-				int.TryParse(numbers[1], out number2);
-			}
-			result = number1 + number2;
-			
+
 			return result;
 		}
 	}
