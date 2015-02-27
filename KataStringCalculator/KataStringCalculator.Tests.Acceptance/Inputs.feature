@@ -14,10 +14,23 @@ Schema dello scenario: se la sequenza contiene un numero, allora il risultato è
 	Allora il risultato è:<Risultato>
 	Esempi:
 	| Stringa | Risultato |
-	| 1     | 1         |
-	| 2     | 2         |
-	| 9     | 9         |
-	| 13    | 13        |
-	| 123   | 123       |
-	| 1234  | 1234      |
+	| 1       | 1         |
+	| 2       | 2         |
+	| 9       | 9         |
+	| 13      | 13        |
+	| 123     | 123       |
+	| 1234    | 1234      |
+
+Schema dello scenario: se la sequenza contiene due numeri separati da virgola, allora il risultato è la somma di quei numeri
+	Data la seguente stringa:<Stringa>
+	Quando eseguo il calcolo
+	Allora il risultato è:<Risultato>
+	Esempi:
+	| Stringa | Risultato |
+	| 0,      | 0         |
+	| 1,      | 1         |
+	| 1,2     | 3         |
+	| 13,23   | 36        |
+	| 145,23  | 168       |
+	| 1234,2  | 1236      |
 
