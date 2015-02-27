@@ -8,8 +8,16 @@ Scenario: se la sequenza è vuota, allora il risultato è 0
 	Quando eseguo il calcolo
 	Allora il risultato è:0
 
-Scenario: se la sequenza è "1", allora il risultato è 1
-	Data la seguente stringa:"1"
+Schema dello scenario: se la sequenza contiene un numero, allora il risultato è quel numero
+	Data la seguente stringa:<Stringa>
 	Quando eseguo il calcolo
-	Allora il risultato è:1
+	Allora il risultato è:<Risultato>
+	Esempi:
+	| Stringa | Risultato |
+	| 1     | 1         |
+	| 2     | 2         |
+	| 9     | 9         |
+	| 13    | 13        |
+	| 123   | 123       |
+	| 1234  | 1234      |
 

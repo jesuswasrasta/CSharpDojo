@@ -1,6 +1,3 @@
-using System;
-
-
 namespace KataStringCalculator
 {
 	public class StringCalculator
@@ -12,12 +9,10 @@ namespace KataStringCalculator
 				return 0;
 			}
 
-			//nando20150227: sounds weird, but fior now it works; remember: you have to work incrementally!
-			if (inputString == "1")
-			{
-				return 1;
-			}
-			return 0;
+			//nando20150227: work incrementally... This code works only for single numer strings, I know.
+			var result = 0;
+			int.TryParse(inputString, out result);
+			return result;
 		}
 	}
 }

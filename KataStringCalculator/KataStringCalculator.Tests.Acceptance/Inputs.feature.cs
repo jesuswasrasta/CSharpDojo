@@ -83,18 +83,24 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("se la sequenza è \"1\", allora il risultato è 1")]
-        public virtual void SeLaSequenzaE1AlloraIlRisultatoE1()
+        [NUnit.Framework.DescriptionAttribute("se la sequenza contiene un numero, allora il risultato è quel numero")]
+        [NUnit.Framework.TestCaseAttribute("1", "1", null)]
+        [NUnit.Framework.TestCaseAttribute("2", "2", null)]
+        [NUnit.Framework.TestCaseAttribute("9", "9", null)]
+        [NUnit.Framework.TestCaseAttribute("13", "13", null)]
+        [NUnit.Framework.TestCaseAttribute("123", "123", null)]
+        [NUnit.Framework.TestCaseAttribute("1234", "1234", null)]
+        public virtual void SeLaSequenzaContieneUnNumeroAlloraIlRisultatoEQuelNumero(string stringa, string risultato, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("se la sequenza è \"1\", allora il risultato è 1", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("se la sequenza contiene un numero, allora il risultato è quel numero", exampleTags);
 #line 11
 this.ScenarioSetup(scenarioInfo);
 #line 12
- testRunner.Given("la seguente stringa:\"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Data ");
+ testRunner.Given(string.Format("la seguente stringa:{0}", stringa), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Data ");
 #line 13
  testRunner.When("eseguo il calcolo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line 14
- testRunner.Then("il risultato è:1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Allora ");
+ testRunner.Then(string.Format("il risultato è:{0}", risultato), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Allora ");
 #line hidden
             this.ScenarioCleanup();
         }

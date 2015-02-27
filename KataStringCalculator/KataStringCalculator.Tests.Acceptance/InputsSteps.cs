@@ -20,7 +20,7 @@ namespace KataStringCalculator.Tests.Acceptance
 			ScenarioContext.Current.Add("stringa", string.Empty);
 		}
 
-		[Given(@"la seguente stringa:""(.*)""")]
+		[Given(@"la seguente stringa:(.*)")]
 		public void DatoLaSeguenteStringa(string p0)
 		{
 			ScenarioContext.Current.Add("stringa", p0);
