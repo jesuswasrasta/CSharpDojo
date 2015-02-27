@@ -25,7 +25,7 @@ namespace KataStringCalculator.Tests.Acceptance
 		{
 			var stringa = ScenarioContext.Current.Get<string>("stringa");
 			var stringCalculator = new StringCalculator();
-			var result = stringCalculator.Calculate(stringa);
+			var result = stringCalculator.Add(stringa);
 			ScenarioContext.Current.Add("somma", result);
 		}
 

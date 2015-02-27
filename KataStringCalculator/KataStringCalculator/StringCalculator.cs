@@ -2,7 +2,7 @@ namespace KataStringCalculator
 {
 	public class StringCalculator
 	{
-		public int Calculate(string inputString)
+		public int Add(string inputString)
 		{
 			throw new System.NotImplementedException();
 		}
