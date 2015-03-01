@@ -56,9 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BundleFactory.cs" />
     <Compile Include="Checkout.cs" />
+    <Compile Include="IBundleFactory.cs" />
     <Compile Include="ICheckout.cs" />
+    <Compile Include="IProductBundle.cs" />
     <Compile Include="IProductRule.cs" />
+    <Compile Include="ProductBundle.cs" />
     <Compile Include="ProductRule.cs" />
     <Compile Include="ProductWithoutPriceException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

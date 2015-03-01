@@ -12,7 +12,7 @@ namespace KataSupermarket
 	public class Checkout : ICheckout
 	{
 		#region Fields
-		private List<IProductRule> _productRules;
+		private readonly List<IProductRule> _productRules;
 		#endregion
 
 
@@ -55,23 +55,16 @@ namespace KataSupermarket
 			foreach (var product in products)
 			{
 				int quantity = productList.Count(p => p.Equals(product));
-				while (quantity > 0)
-				{
-					var rulesToApply = _productRules.Where(r => r.Product == product && r.BundleQuantity <= quantity).OrderByDescending(p=> p.BundleQuantity);
-					
-					if (rulesToApply.Count() == 0)
-					{
-						throw new ProductWithoutPriceException("Non siamo qui per vendere, ma per regalare! :)");
-					}
-					var ruleToApply = rulesToApply.First();
 
-					quantity -= (int)ruleToApply.BundleQuantity;
-					price += ruleToApply.FinalPrice;
-				}
+				var bundleFactory = new BundleFactory();
+				var bundles = bundleFactory.MakeBundles(product, (uint)quantity, _productRules);
+
+				price += bundles.Sum(b => b.FinalPrice);
 			}
 
 			return price;
 		}
+
 		#endregion
 	}
 }
