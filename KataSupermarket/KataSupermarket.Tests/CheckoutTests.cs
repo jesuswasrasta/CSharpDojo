@@ -1,12 +1,10 @@
-﻿using System;
+﻿#region Usings
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-
-using Moq;
 
 using NUnit.Framework;
+
+
+#endregion
 
 
 namespace KataSupermarket.Tests
