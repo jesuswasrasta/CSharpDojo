@@ -35,13 +35,7 @@ namespace KataSupermarket.Tests
 			var productRuleD1 = new ProductRule();
 			productRuleD1.Set('D', 1, 15);
 
-			_productRules = new List<IProductRule>();
-			_productRules.Add(productRuleA1);
-			_productRules.Add(productRuleA3);
-			_productRules.Add(productRuleB1);
-			_productRules.Add(productRuleB2);
-			_productRules.Add(productRuleC1);
-			_productRules.Add(productRuleD1);
+			_productRules = new List<IProductRule> {productRuleA1, productRuleA3, productRuleB1, productRuleB2, productRuleC1, productRuleD1};
 		}
 
 
