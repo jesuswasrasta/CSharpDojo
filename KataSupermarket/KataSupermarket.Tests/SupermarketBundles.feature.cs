@@ -109,6 +109,49 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("acquisto AAABC e pago 170 dollari")]
+        public virtual void AcquistoAAABCEPago170Dollari()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("acquisto AAABC e pago 170 dollari", ((string[])(null)));
+#line 20
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Prodotto",
+                        "Prezzo"});
+            table3.AddRow(new string[] {
+                        "A",
+                        "50"});
+            table3.AddRow(new string[] {
+                        "B",
+                        "30"});
+            table3.AddRow(new string[] {
+                        "C",
+                        "10"});
+#line 21
+ testRunner.Given("il seguento listino prezzi:", ((string)(null)), table3, "Dato ");
+#line hidden
+            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Prodotto",
+                        "Quantità",
+                        "Prezzo"});
+            table4.AddRow(new string[] {
+                        "A",
+                        "2",
+                        "80"});
+#line 26
+ testRunner.Given("le seguenti offerte:", ((string)(null)), table4, "Dato ");
+#line 29
+ testRunner.Given("la seguente lista di prodotti acquistati AAABC", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dato ");
+#line 30
+ testRunner.When("vado a pagare", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line 31
+ testRunner.Then("il prezzo totale è 170 dollari", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Allora ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
