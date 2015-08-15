@@ -32,8 +32,8 @@ namespace KataSupermarket.Tests
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("it-IT"), "Supermarket Bundles", "Al fine di ottenere sconti e offerte\nIn qualità di acquirente del Supermercato\nVo" +
-                    "glio conoscere il costo dei prodotti e le relative offerte associate", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("it-IT"), "Supermarket Bundles", "Al fine di ottenere sconti e offerte\r\nIn qualità di acquirente del Supermercato\r\n" +
+                    "Voglio conoscere il costo dei prodotti e le relative offerte associate", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,44 +66,45 @@ namespace KataSupermarket.Tests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("compro 1 pezzo del ProdottoA e pago 50 dollari")]
+        [NUnit.Framework.DescriptionAttribute("acquisto AABC e pago 120 dollari")]
         [NUnit.Framework.CategoryAttribute("Bundles")]
-        public virtual void Compro1PezzoDelProdottoAEPago50Dollari()
+        public virtual void AcquistoAABCEPago120Dollari()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("compro 1 pezzo del ProdottoA e pago 50 dollari", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("acquisto AABC e pago 120 dollari", new string[] {
                         "Bundles"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
-#line 8
- testRunner.Given("che ProdottoA costa 50 dollari", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dato ");
-#line 9
- testRunner.Given("che compro 1 pezzo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dato ");
-#line 10
- testRunner.When("chiedo il prezzo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line 11
- testRunner.Then("il prezzo è 50 dollari", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Allora ");
 #line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("la mia lista è AABC e pago 120")]
-        public virtual void LaMiaListaEAABCEPago120()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("la mia lista è AABC e pago 120", ((string[])(null)));
-#line 14
-this.ScenarioSetup(scenarioInfo);
-#line 15
- testRunner.Given("2 pezzi di A che costa 50 dollari", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dato ");
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Prodotto",
+                        "Prezzo"});
+            table1.AddRow(new string[] {
+                        "A",
+                        "50"});
+            table1.AddRow(new string[] {
+                        "B",
+                        "30"});
+            table1.AddRow(new string[] {
+                        "C",
+                        "10"});
+#line 8
+ testRunner.Given("il seguento listino prezzi:", ((string)(null)), table1, "Dato ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Prodotto",
+                        "Quantità",
+                        "Prezzo"});
+            table2.AddRow(new string[] {
+                        "A",
+                        "2",
+                        "80"});
+#line 13
+ testRunner.Given("le seguenti offerte:", ((string)(null)), table2, "Dato ");
 #line 16
- testRunner.Given("1 pezzi di B che costa 30 dollari", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dato ");
+ testRunner.Given("la seguente lista di prodotti acquistati AABC", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dato ");
 #line 17
- testRunner.Given("1 pezzi di C che costa 10 dollari", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dato ");
+ testRunner.When("vado a pagare", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line 18
- testRunner.Given("una offerta per 2 pezzi di A per 80 dollari", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dato ");
-#line 19
- testRunner.When("chiedo il prezzo totale", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line 20
  testRunner.Then("il prezzo totale è 120 dollari", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Allora ");
 #line hidden
             this.ScenarioCleanup();

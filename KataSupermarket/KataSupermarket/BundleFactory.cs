@@ -1,4 +1,5 @@
 #region Usings
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -15,7 +16,12 @@ namespace KataSupermarket
 	{
 		public ProductBundle[] MakeBundles(char product, uint totalQuantity, List<IProductRule> productRules)
 		{
-			var bundles = new List<ProductBundle>();
+		    if (!productRules.Any())
+		    {
+		        throw new ArgumentNullException(nameof(productRules));
+		    }
+
+		    var bundles = new List<ProductBundle>();
 			while (totalQuantity > 0)
 			{
 				var actualQuantity = totalQuantity;

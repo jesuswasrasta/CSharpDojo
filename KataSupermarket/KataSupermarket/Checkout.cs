@@ -47,7 +47,7 @@ namespace KataSupermarket
 		{
 			if (productList == null)
 			{
-				throw new ArgumentNullException("productList");
+				throw new ArgumentNullException(nameof(productList));
 			}
 
 			double price = 0;
