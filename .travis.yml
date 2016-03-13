@@ -1,8 +1,8 @@
 language: csharp
-solution: .\KataSupermarket\KataSupermarket.sln
+solution: KataSupermarket\KataSupermarket.sln
 before_install:
   - sudo apt-get install nunit-console
 before_script:
-  - nuget restore .\KataSupermarket\KataSupermarket.sln
+  - nuget restore KataSupermarket\KataSupermarket.sln
 after_script:
-  - nunit-console .\KataSupermarket\KataSupermarket.Tests\bin\Release\KataSupermarket.Tests.dll
+  - nunit-console KataSupermarket\KataSupermarket.Tests\bin\Release\KataSupermarket.Tests.dll
