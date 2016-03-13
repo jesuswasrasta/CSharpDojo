@@ -7,8 +7,8 @@
     <ProjectGuid>{07F7A77D-1882-4F18-A769-6D21BD3BEEAE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SmallestInt</RootNamespace>
-    <AssemblyName>SmallestInt</AssemblyName>
+    <RootNamespace>KataSmallestInt</RootNamespace>
+    <AssemblyName>KataSmallestInt</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

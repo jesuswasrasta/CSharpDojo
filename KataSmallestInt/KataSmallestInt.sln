@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallestInt", "SmallestInt\SmallestInt.csproj", "{07F7A77D-1882-4F18-A769-6D21BD3BEEAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataSmallestInt", "KataSmallestInt\KataSmallestInt.csproj", "{07F7A77D-1882-4F18-A769-6D21BD3BEEAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallestInt.Tests", "SmallestInt.Tests\SmallestInt.Tests.csproj", "{73DC4122-E850-40DA-9B38-8E64AF4E5496}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataSmallestInt.Tests", "KataSmallestInt.Tests\KataSmallestInt.Tests.csproj", "{73DC4122-E850-40DA-9B38-8E64AF4E5496}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{436ABA37-2E10-4FC8-B31B-37D37B4B1245}"
 	ProjectSection(SolutionItems) = preProject

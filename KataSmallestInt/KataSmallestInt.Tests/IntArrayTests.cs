@@ -1,9 +1,9 @@
-﻿using NUnit.Framework;
+﻿using KataSmallestInt;
 
-using SmallestInt;
+using NUnit.Framework;
 
 
-namespace SmallestInts.Tests
+namespace KataSmallestInts.Tests
 {
 	[TestFixture]
 	public class IntArrayTests

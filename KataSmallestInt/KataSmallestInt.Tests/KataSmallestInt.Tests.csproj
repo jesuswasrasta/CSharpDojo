@@ -7,8 +7,8 @@
     <ProjectGuid>{73DC4122-E850-40DA-9B38-8E64AF4E5496}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SmallestInts.Tests</RootNamespace>
-    <AssemblyName>SmallestInts.Tests</AssemblyName>
+    <RootNamespace>KataSmallestInts.Tests</RootNamespace>
+    <AssemblyName>KataSmallestInts.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -48,9 +48,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SmallestInt\SmallestInt.csproj">
+    <ProjectReference Include="..\KataSmallestInt\KataSmallestInt.csproj">
       <Project>{07F7A77D-1882-4F18-A769-6D21BD3BEEAE}</Project>
-      <Name>SmallestInt</Name>
+      <Name>KataSmallestInt</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace SmallestInt
+﻿namespace KataSmallestInt
 {
 	public class IntArray
 	{
