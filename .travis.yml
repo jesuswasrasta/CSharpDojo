@@ -1,5 +1,6 @@
 language: csharp
 solution: KataSupermarket\KataSupermarket.sln
+
 before_install:
   - sudo apt-get install nunit-console
 before_script:
