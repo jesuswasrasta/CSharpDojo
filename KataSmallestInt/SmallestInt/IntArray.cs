@@ -1,7 +1,4 @@
-﻿using System;
-
-
-namespace SmallestInt
+﻿namespace SmallestInt
 {
 	public class IntArray
 	{

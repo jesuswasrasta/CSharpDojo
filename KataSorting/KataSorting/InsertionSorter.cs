@@ -18,7 +18,7 @@
 						//elements[i - 1] = temp;
 
 						//nando20150224: cool swapping, bro! 8)
-						elements[i] =elements[i] + elements[i - 1];
+						elements[i] = elements[i] + elements[i - 1];
 						elements[i - 1] = elements[i] - elements[i - 1];
 						elements[i] = elements[i] - elements[i - 1];
 						unsorted = true;
