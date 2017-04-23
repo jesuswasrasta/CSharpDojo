@@ -29,7 +29,7 @@ namespace KataSupermarket
 		{
 			if (productRule == null)
 			{
-				throw new ArgumentNullException("productRule");
+				throw new ArgumentNullException(nameof(productRule));
 			}
 			_productRules.Add(productRule);
 		}
@@ -38,7 +38,7 @@ namespace KataSupermarket
 		{
 			if (productRules == null)
 			{
-				throw new ArgumentNullException("productRules");
+				throw new ArgumentNullException(nameof(productRules));
 			}
 			_productRules.AddRange(productRules);
 		}

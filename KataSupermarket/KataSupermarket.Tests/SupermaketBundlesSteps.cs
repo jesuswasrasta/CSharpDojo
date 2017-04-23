@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
 
 using NUnit.Framework;
 
 using TechTalk.SpecFlow;
-using TechTalk.SpecFlow.Assist;
 
 
 namespace KataSupermarket.Tests

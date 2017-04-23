@@ -32,8 +32,8 @@ namespace KataSupermarket.Tests
 			var bundles = bundleFactory.MakeBundles('A', 1, productARules);
 	
 			Assert.IsNotNull(bundles);
-			Assert.AreEqual(1, bundles.Count());
-			Assert.AreEqual(50, bundles.FirstOrDefault().FinalPrice);
+			Assert.AreEqual(1, bundles.Length);
+			Assert.AreEqual(50, bundles.FirstOrDefault()?.FinalPrice);
 		}
 
 
@@ -49,8 +49,8 @@ namespace KataSupermarket.Tests
 			var bundles = bundleFactory.MakeBundles(product, quantity, productARules);
 
 			Assert.IsNotNull(bundles);
-			Assert.AreEqual(1, bundles.Count());
-			Assert.AreEqual(50, bundles.FirstOrDefault().FinalPrice);
+			Assert.AreEqual(1, bundles.Length);
+			Assert.AreEqual(50, bundles.FirstOrDefault()?.FinalPrice);
 		}
 
 

@@ -17,7 +17,7 @@ namespace KataSupermarket.Tests
         public static T Retrieve<T>(this ScenarioContext scenarioContext) where T : class, new()
         {
             T istance;
-            scenarioContext.TryGetValue<T>(out istance);
+            scenarioContext.TryGetValue(out istance);
             return istance ?? new T();
         }
 
@@ -29,7 +29,7 @@ namespace KataSupermarket.Tests
             }
 
             T istance;
-            scenarioContext.TryGetValue<T>(out istance);
+            scenarioContext.TryGetValue(out istance);
             return istance ?? new T();
         }
 

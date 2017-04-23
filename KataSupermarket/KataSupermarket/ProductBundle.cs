@@ -21,9 +21,9 @@ namespace KataSupermarket
 
 
 		#region Properties
-		public char Product { get; private set; }
+		public char Product { get; }
 
-		public uint Quantity { get; private set; }
+		public uint Quantity { get; }
 
 		public double FinalPrice { get; set; }
 		#endregion
