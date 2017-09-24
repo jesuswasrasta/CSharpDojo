@@ -28,7 +28,7 @@ namespace KataSupermarket.Tests
 #line 1 "SupermarketBundles.feature"
 #line hidden
         
-        [NUnit.Framework.TestFixtureSetUpAttribute()]
+        [NUnit.Framework.SetUp()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
@@ -37,7 +37,7 @@ namespace KataSupermarket.Tests
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        [NUnit.Framework.TestFixtureTearDownAttribute()]
+        [NUnit.Framework.TearDown()]
         public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
