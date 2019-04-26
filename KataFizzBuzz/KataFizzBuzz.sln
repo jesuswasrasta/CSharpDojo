@@ -3,16 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataFizzBuzz", "KataFizzBuzz\KataFizzBuzz.csproj", "{A86A262E-B7D7-4BF6-9D9A-7694F36A3520}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataFizzBuzz.Tests", "KataFizzBuzz.Tests\KataFizzBuzz.Tests.csproj", "{68477338-3641-4000-A80F-ACD1C22CE54A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D02DF974-9250-41CD-AD21-CA4F2549799F}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataFizzBuzz", "KataFizzBuzz\KataFizzBuzz.csproj", "{3F4C7664-BED3-42B8-98D1-2C016674C591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataFizzBuzz.Tests", "KataFizzBuzz.Tests\KataFizzBuzz.Tests.csproj", "{FAD5DAAE-45B2-4929-9FCC-112A633B9E87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,22 +22,22 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A86A262E-B7D7-4BF6-9D9A-7694F36A3520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A86A262E-B7D7-4BF6-9D9A-7694F36A3520}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A86A262E-B7D7-4BF6-9D9A-7694F36A3520}.Debug|x86.ActiveCfg = Debug|x86
-		{A86A262E-B7D7-4BF6-9D9A-7694F36A3520}.Debug|x86.Build.0 = Debug|x86
-		{A86A262E-B7D7-4BF6-9D9A-7694F36A3520}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A86A262E-B7D7-4BF6-9D9A-7694F36A3520}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A86A262E-B7D7-4BF6-9D9A-7694F36A3520}.Release|x86.ActiveCfg = Release|x86
-		{A86A262E-B7D7-4BF6-9D9A-7694F36A3520}.Release|x86.Build.0 = Release|x86
-		{68477338-3641-4000-A80F-ACD1C22CE54A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68477338-3641-4000-A80F-ACD1C22CE54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68477338-3641-4000-A80F-ACD1C22CE54A}.Debug|x86.ActiveCfg = Debug|x86
-		{68477338-3641-4000-A80F-ACD1C22CE54A}.Debug|x86.Build.0 = Debug|x86
-		{68477338-3641-4000-A80F-ACD1C22CE54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68477338-3641-4000-A80F-ACD1C22CE54A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68477338-3641-4000-A80F-ACD1C22CE54A}.Release|x86.ActiveCfg = Release|x86
-		{68477338-3641-4000-A80F-ACD1C22CE54A}.Release|x86.Build.0 = Release|x86
+		{3F4C7664-BED3-42B8-98D1-2C016674C591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4C7664-BED3-42B8-98D1-2C016674C591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4C7664-BED3-42B8-98D1-2C016674C591}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3F4C7664-BED3-42B8-98D1-2C016674C591}.Debug|x86.Build.0 = Debug|Any CPU
+		{3F4C7664-BED3-42B8-98D1-2C016674C591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4C7664-BED3-42B8-98D1-2C016674C591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4C7664-BED3-42B8-98D1-2C016674C591}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F4C7664-BED3-42B8-98D1-2C016674C591}.Release|x86.Build.0 = Release|Any CPU
+		{FAD5DAAE-45B2-4929-9FCC-112A633B9E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD5DAAE-45B2-4929-9FCC-112A633B9E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD5DAAE-45B2-4929-9FCC-112A633B9E87}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FAD5DAAE-45B2-4929-9FCC-112A633B9E87}.Debug|x86.Build.0 = Debug|Any CPU
+		{FAD5DAAE-45B2-4929-9FCC-112A633B9E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD5DAAE-45B2-4929-9FCC-112A633B9E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD5DAAE-45B2-4929-9FCC-112A633B9E87}.Release|x86.ActiveCfg = Release|Any CPU
+		{FAD5DAAE-45B2-4929-9FCC-112A633B9E87}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
