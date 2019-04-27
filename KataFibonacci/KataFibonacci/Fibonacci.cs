@@ -1,14 +1,15 @@
 ﻿#region Usings
-using System.Collections.Generic;
-using System.Linq;
 
 
 #endregion
 
 
+using System.Collections.Generic;
+using System.Linq;
+
 namespace KataFibonacci
 {
-	public class Fibonacci : IFibonacci
+	public class Fibonacci
 	{
 		public string GetSequence(int numberOfElements)
 		{

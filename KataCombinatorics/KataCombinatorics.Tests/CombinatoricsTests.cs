@@ -24,12 +24,12 @@ namespace KataCombinatorics.Tests
 
 		#endregion
 
-		[TestFixtureSetUp]
+		[SetUp]
 		public void SetupMethods()
 		{
 		}
 
-		[TestFixtureTearDown]
+		[TearDown]
 		public void TearDownMethods()
 		{
 		}

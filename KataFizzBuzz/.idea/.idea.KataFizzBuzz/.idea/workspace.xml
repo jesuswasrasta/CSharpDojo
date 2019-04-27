@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21e334fc-2696-45c9-bb12-adc3faf188f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz.Tests/KataFizzBuzz.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/KataFizzBuzz.Tests/KataFizzBuzz.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz.Tests2/FizzBuzzerQuickAndDirtyTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz.Tests2/FizzBuzzerTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz.Tests2/Properties/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz.Tests2/packages.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz.sln" beforeDir="false" afterPath="$PROJECT_DIR$/KataFizzBuzz.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz/KataFizzBuzz.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/KataFizzBuzz/KataFizzBuzz.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz2/FizzBuzzer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz2/FizzBuzzerQuickAndDirty.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz2/IFizzBuzzer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz2/IRule.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz2/MultipleRule.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KataFizzBuzz2/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.KataFizzBuzz/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KataFizzBuzz/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.KataFizzBuzz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KataFizzBuzz/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.KataFizzBuzz/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KataFizzBuzz/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KataFizzBuzz/MultipleRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KataFizzBuzz/MultipleRule.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,32 +16,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/Properties/AssemblyInfo.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-              <folding>
-                <marker date="1554572802942" expanded="false" signature="6:101" ph="..." />
-                <marker date="1554572802942" expanded="true" signature="103:290" ph="/* General Information about an assembly is controlled through the following ... */" />
-                <marker date="1554572802942" expanded="true" signature="613:823" ph="/* Setting ComVisible to false makes the types in this assembly not visible ... */" />
-                <marker date="1554572802942" expanded="true" signature="998:1325" ph="/* Version information for an assembly consists of the following four values: ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/FizzBuzzerQuickAndDirtyTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="288">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
               <folding>
-                <marker date="1554572802942" expanded="false" signature="6:95" ph="..." />
-                <marker date="1554572802942" expanded="true" signature="126:1095" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="189:1093" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="325:498" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="619:787" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="914:1087" ph="{...}" />
+                <marker date="1564781608104" expanded="false" signature="6:95" ph="..." />
+                <marker date="1564781608104" expanded="true" signature="126:1095" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="189:1093" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="325:498" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="619:787" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="914:1087" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -59,13 +35,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/FizzBuzzerTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state>
               <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
-                <marker date="1554572802942" expanded="false" signature="6:95" ph="..." />
-                <marker date="1554572802942" expanded="true" signature="126:778" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="176:776" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="477:770" ph="{...}" />
+                <marker date="1564781608104" expanded="false" signature="6:95" ph="..." />
+                <marker date="1564781608104" expanded="true" signature="126:778" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="176:776" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="477:770" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -74,34 +50,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KataFizzBuzz/FizzBuzzer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="260">
               <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding>
-                <marker date="1554572802942" expanded="false" signature="0:80" ph="Usings" />
-                <marker date="1554572802942" expanded="false" signature="21:67" ph="..." />
-                <marker date="1554572802942" expanded="true" signature="105:684" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="146:682" ph="{...}" />
-                <marker date="1554572802942" expanded="false" signature="152:219" ph="Fields" />
-                <marker date="1554572802942" expanded="false" signature="224:318" ph="Constructors" />
-                <marker date="1554572802942" expanded="true" signature="266:305" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="323:679" ph="Public Methods" />
-                <marker date="1554572802942" expanded="true" signature="379:408" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="441:666" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="580:633" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KataFizzBuzz/Properties/AssemblyInfo.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1554572802942" expanded="false" signature="6:101" ph="..." />
-                <marker date="1554572802942" expanded="true" signature="103:290" ph="/* General Information about an assembly is controlled through the following ... */" />
-                <marker date="1554572802942" expanded="true" signature="601:811" ph="/* Setting ComVisible to false makes the types in this assembly not visible ... */" />
-                <marker date="1554572802942" expanded="true" signature="986:1313" ph="/* Version information for an assembly consists of the following four values: ... */" />
+                <marker date="1564781608104" expanded="false" signature="0:80" ph="Usings" />
+                <marker date="1564781608104" expanded="false" signature="21:67" ph="..." />
+                <marker date="1564781608104" expanded="true" signature="105:684" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="146:682" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="152:219" ph="Fields" />
+                <marker date="1564781608104" expanded="true" signature="224:318" ph="Constructors" />
+                <marker date="1564781608104" expanded="true" signature="266:305" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="323:679" ph="Public Methods" />
+                <marker date="1564781608104" expanded="true" signature="379:408" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="441:666" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="580:633" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -110,24 +72,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KataFizzBuzz/IFizzBuzzer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="32">
               <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding>
-                <marker date="1554572802942" expanded="true" signature="22:117" ph="{...}" />
-                <marker date="1554572802942" expanded="true" signature="54:115" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="22:117" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="54:115" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KataFizzBuzz/obj/Debug/netcoreapp2.2/KataFizzBuzz.AssemblyInfo.cs">
+        <entry file="file://$PROJECT_DIR$/KataFizzBuzz/FizzBuzzerQuickAndDirty.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="32">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding>
-                <marker date="1556318926822" expanded="true" signature="0:259" ph="/* ------------------------------------------------------------------------------ ... */" />
-                <marker date="1556318926822" expanded="false" signature="267:299" ph="..." />
+                <marker date="1564781608104" expanded="true" signature="22:304" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="62:302" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="97:299" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="126:159" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="183:212" ph="{...}" />
+                <marker date="1564781608104" expanded="true" signature="236:265" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/KataFizzBuzz/MultipleRule.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="35" column="56" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+              <folding>
+                <marker date="1564784201261" expanded="false" signature="0:41" ph="Usings" />
+                <marker date="1564784201261" expanded="true" signature="66:640" ph="{...}" />
+                <marker date="1564784201261" expanded="true" signature="103:638" ph="{...}" />
+                <marker date="1564784201261" expanded="true" signature="109:251" ph="Constructors" />
+                <marker date="1564784201261" expanded="true" signature="182:238" ph="{...}" />
+                <marker date="1564784201261" expanded="true" signature="256:379" ph="Properties" />
+                <marker date="1564784201261" expanded="true" signature="384:635" ph="Public Methods" />
+                <marker date="1564784201261" expanded="true" signature="445:515" ph="{...}" />
+                <marker date="1564784201261" expanded="true" signature="555:622" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -139,28 +125,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/KataFizzBuzz/IFizzBuzzer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KataFizzBuzz/FizzBuzzer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KataFizzBuzz/FizzBuzzerQuickAndDirty.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/KataFizzBuzz/MultipleRule.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/FizzBuzzerTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/FizzBuzzerQuickAndDirtyTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/KataFizzBuzz/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/KataFizzBuzz/IFizzBuzzer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/KataFizzBuzz/obj/Debug/netcoreapp2.2/KataFizzBuzz.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/KataFizzBuzz/FizzBuzzer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/KataFizzBuzz2/Class1.cs" />
         <option value="$PROJECT_DIR$/KataFizzBuzz.Tests2/Class1.cs" />
+        <option value="$PROJECT_DIR$/KataFizzBuzz/MultipleRule.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="25" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
+  <component name="ProjectId" id="1Y8has77FJYmfWG0XDs1mJKVvTm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -171,8 +152,18 @@
         <subPane>
           <expand>
             <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="KataFizzBuzz" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="KataFizzBuzz" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="KataFizzBuzz" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="KataFizzBuzz" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="KataFizzBuzz.Tests" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -186,8 +177,17 @@
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/KataFizzBuzz/Properties/AssemblyInfo.cs" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RunDashboard">
@@ -201,6 +201,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="KataFizzBuzz.Tests" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/KataFizzBuzz.Tests/KataFizzBuzz.Tests.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -216,11 +236,12 @@
       <workItem from="1554819515741" duration="503000" />
       <workItem from="1556318223162" duration="1047000" />
       <workItem from="1556319312323" duration="284000" />
+      <workItem from="1564782291557" duration="871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2765000" />
+    <option name="totallyTimeSpent" value="3636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -232,14 +253,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1050" extended-state="6" />
+    <frame x="-4" y="0" width="1928" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18676628" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18890075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Performance Profiler" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -251,10 +273,11 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" visible="true" weight="0.32969433" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5010672" side_tool="true" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Build" order="14" sideWeight="0.49893278" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.49893278" weight="0.32969433" />
+      <window_info anchor="right" id="Unit Tests Coverage" visible="true" weight="0.32977587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -265,6 +288,26 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="150" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="233" />
+    <coverage-tree-state>
+      <expand />
+      <select />
+    </coverage-tree-state>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="582" y="179" key="#KataFizzBuzz.Tests" timestamp="1582330270842">
+      <screen x="0" y="0" width="1920" height="1036" />
+    </state>
+    <state x="582" y="179" key="#KataFizzBuzz.Tests/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1582330270842" />
+    <state x="747" y="279" key="FileChooserDialogImpl" timestamp="1582330261083">
+      <screen x="0" y="0" width="1920" height="1036" />
+    </state>
+    <state x="747" y="279" key="FileChooserDialogImpl/0.0.1920.1036/1920.0.1920.1080@0.0.1920.1036" timestamp="1582330261083" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -283,97 +326,97 @@
     <entry file="file://$PROJECT_DIR$/KataFizzBuzz2/Properties/AssemblyInfo.cs" />
     <entry file="file://$PROJECT_DIR$/KataFizzBuzz.Tests2/FizzBuzzerQuickAndDirtyTests.cs" />
     <entry file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/packages.config" />
-    <entry file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/Properties/AssemblyInfo.cs">
+    <entry file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/Properties/AssemblyInfo.cs" />
+    <entry file="file://$PROJECT_DIR$/KataFizzBuzz/Properties/AssemblyInfo.cs" />
+    <entry file="file://$PROJECT_DIR$/KataFizzBuzz/obj/Debug/netcoreapp2.2/KataFizzBuzz.AssemblyInfo.cs" />
+    <entry file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/FizzBuzzerQuickAndDirtyTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+        <state relative-caret-position="288">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding>
-            <marker date="1554572802942" expanded="false" signature="6:101" ph="..." />
-            <marker date="1554572802942" expanded="true" signature="103:290" ph="/* General Information about an assembly is controlled through the following ... */" />
-            <marker date="1554572802942" expanded="true" signature="613:823" ph="/* Setting ComVisible to false makes the types in this assembly not visible ... */" />
-            <marker date="1554572802942" expanded="true" signature="998:1325" ph="/* Version information for an assembly consists of the following four values: ... */" />
+            <marker date="1564781608104" expanded="false" signature="6:95" ph="..." />
+            <marker date="1564781608104" expanded="true" signature="126:1095" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="189:1093" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="325:498" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="619:787" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="914:1087" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/FizzBuzzerTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state>
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
-            <marker date="1554572802942" expanded="false" signature="6:95" ph="..." />
-            <marker date="1554572802942" expanded="true" signature="126:778" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="176:776" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="477:770" ph="{...}" />
+            <marker date="1564781608104" expanded="false" signature="6:95" ph="..." />
+            <marker date="1564781608104" expanded="true" signature="126:778" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="176:776" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="477:770" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/KataFizzBuzz/FizzBuzzer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="260">
           <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
           <folding>
-            <marker date="1554572802942" expanded="false" signature="0:80" ph="Usings" />
-            <marker date="1554572802942" expanded="false" signature="21:67" ph="..." />
-            <marker date="1554572802942" expanded="true" signature="105:684" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="146:682" ph="{...}" />
-            <marker date="1554572802942" expanded="false" signature="152:219" ph="Fields" />
-            <marker date="1554572802942" expanded="false" signature="224:318" ph="Constructors" />
-            <marker date="1554572802942" expanded="true" signature="266:305" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="323:679" ph="Public Methods" />
-            <marker date="1554572802942" expanded="true" signature="379:408" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="441:666" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="580:633" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KataFizzBuzz/Properties/AssemblyInfo.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1554572802942" expanded="false" signature="6:101" ph="..." />
-            <marker date="1554572802942" expanded="true" signature="103:290" ph="/* General Information about an assembly is controlled through the following ... */" />
-            <marker date="1554572802942" expanded="true" signature="601:811" ph="/* Setting ComVisible to false makes the types in this assembly not visible ... */" />
-            <marker date="1554572802942" expanded="true" signature="986:1313" ph="/* Version information for an assembly consists of the following four values: ... */" />
+            <marker date="1564781608104" expanded="false" signature="0:80" ph="Usings" />
+            <marker date="1564781608104" expanded="false" signature="21:67" ph="..." />
+            <marker date="1564781608104" expanded="true" signature="105:684" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="146:682" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="152:219" ph="Fields" />
+            <marker date="1564781608104" expanded="true" signature="224:318" ph="Constructors" />
+            <marker date="1564781608104" expanded="true" signature="266:305" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="323:679" ph="Public Methods" />
+            <marker date="1564781608104" expanded="true" signature="379:408" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="441:666" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="580:633" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/KataFizzBuzz/IFizzBuzzer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="32">
           <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding>
-            <marker date="1554572802942" expanded="true" signature="22:117" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="54:115" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="22:117" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="54:115" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KataFizzBuzz/obj/Debug/netcoreapp2.2/KataFizzBuzz.AssemblyInfo.cs">
+    <entry file="file://$PROJECT_DIR$/KataFizzBuzz/FizzBuzzerQuickAndDirty.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="32">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding>
-            <marker date="1556318926822" expanded="true" signature="0:259" ph="/* ------------------------------------------------------------------------------ ... */" />
-            <marker date="1556318926822" expanded="false" signature="267:299" ph="..." />
+            <marker date="1564781608104" expanded="true" signature="22:304" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="62:302" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="97:299" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="126:159" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="183:212" ph="{...}" />
+            <marker date="1564781608104" expanded="true" signature="236:265" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KataFizzBuzz.Tests/FizzBuzzerQuickAndDirtyTests.cs">
+    <entry file="file://$PROJECT_DIR$/KataFizzBuzz/MultipleRule.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="306">
+          <caret line="35" column="56" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
           <folding>
-            <marker date="1554572802942" expanded="false" signature="6:95" ph="..." />
-            <marker date="1554572802942" expanded="true" signature="126:1095" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="189:1093" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="325:498" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="619:787" ph="{...}" />
-            <marker date="1554572802942" expanded="true" signature="914:1087" ph="{...}" />
+            <marker date="1564784201261" expanded="false" signature="0:41" ph="Usings" />
+            <marker date="1564784201261" expanded="true" signature="66:640" ph="{...}" />
+            <marker date="1564784201261" expanded="true" signature="103:638" ph="{...}" />
+            <marker date="1564784201261" expanded="true" signature="109:251" ph="Constructors" />
+            <marker date="1564784201261" expanded="true" signature="182:238" ph="{...}" />
+            <marker date="1564784201261" expanded="true" signature="256:379" ph="Properties" />
+            <marker date="1564784201261" expanded="true" signature="384:635" ph="Public Methods" />
+            <marker date="1564784201261" expanded="true" signature="445:515" ph="{...}" />
+            <marker date="1564784201261" expanded="true" signature="555:622" ph="{...}" />
           </folding>
         </state>
       </provider>

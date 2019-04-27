@@ -33,11 +33,7 @@ namespace KataFizzBuzz
 
 		public string GetTheWord(int number)
 		{
-			if (IsApplicable(number))
-			{
-				return WordToSay;
-			}
-			return String.Empty;
+			return IsApplicable(number) ? WordToSay : string.Empty;
 		}
 		#endregion
 	}

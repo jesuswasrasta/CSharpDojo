@@ -1,13 +1,15 @@
 language: csharp
 #solution: KataSupermarket/KataSupermarket.sln
 dist: xenial
-mono: none
+mono: 
+  - latest
 sudo: required
 dotnet: 2.2
 
 before_install:
   - sudo apt-get install nunit-console
   - sudo apt-get install -qq dotnet-sdk-2.2
+  - sudo apt-get install -qq nuget
 
 before_script:
 #  - dotnet restore KataCombinatorics/KataCombinatorics.sln
