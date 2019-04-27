@@ -1,5 +1,6 @@
 language: csharp
 #solution: KataSupermarket\KataSupermarket.sln
+dist: xenial
 mono: none
 sudo: required
 dotnet: 2.2
