@@ -10,21 +10,21 @@ before_install:
   - sudo apt-get install -qq dotnet-sdk-2.2
 
 before_script:
-  - dotnet restore KataCombinatorics\KataCombinatorics.sln
-  - dotnet restore KataFibonacci\KataFibonacci.sln
+#  - dotnet restore KataCombinatorics\KataCombinatorics.sln
+#  - dotnet restore KataFibonacci\KataFibonacci.sln
   - dotnet restore KataFizzBuzz\KataFizzBuzz.sln
-  - dotnet restore KataGameOfLife\KataGameOfLife.sln
-  - dotnet restore KataGreatestCommonDivisor\KataGreatestCommonDivisor.sln
-  - dotnet restore KataMoneyExchange\KataMoneyExchange.sln
-  - dotnet restore KataPrimeFactors\KataPrimeFactors.sln
-  - dotnet restore KataRomanNumerals\KataRomanNumerals.sln
-  - dotnet restore KataSmallestInt\KataSmallestInt.sln
-  - dotnet restore KataSorting\KataSorting.sln
-  - dotnet restore KataStringCalculator\KataStringCalculator.sln
-  - dotnet restore KataSupermarket\KataSupermarket.sln
+#  - dotnet restore KataGameOfLife\KataGameOfLife.sln
+#  - dotnet restore KataGreatestCommonDivisor\KataGreatestCommonDivisor.sln
+#  - dotnet restore KataMoneyExchange\KataMoneyExchange.sln
+#  - dotnet restore KataPrimeFactors\KataPrimeFactors.sln
+#  - dotnet restore KataRomanNumerals\KataRomanNumerals.sln
+#  - dotnet restore KataSmallestInt\KataSmallestInt.sln
+#  - dotnet restore KataSorting\KataSorting.sln
+#  - dotnet restore KataStringCalculator\KataStringCalculator.sln
+#  - dotnet restore KataSupermarket\KataSupermarket.sln
   - nuget restore KataCombinatorics\KataCombinatorics.sln
   - nuget restore KataFibonacci\KataFibonacci.sln
-  - nuget restore KataFizzBuzz\KataFizzBuzz.sln
+#  - nuget restore KataFizzBuzz\KataFizzBuzz.sln
   - nuget restore KataGameOfLife\KataGameOfLife.sln
   - nuget restore KataGreatestCommonDivisor\KataGreatestCommonDivisor.sln
   - nuget restore KataMoneyExchange\KataMoneyExchange.sln
@@ -36,18 +36,18 @@ before_script:
   - nuget restore KataSupermarket\KataSupermarket.sln
 
 script:
-  - dotnet build KataCombinatorics\KataCombinatorics.sln
-  - dotnet build KataFibonacci\KataFibonacci.sln
+#  - dotnet build KataCombinatorics\KataCombinatorics.sln
+#  - dotnet build KataFibonacci\KataFibonacci.sln
   - dotnet build KataFizzBuzz\KataFizzBuzz.sln
-  - dotnet build KataGameOfLife\KataGameOfLife.sln
-  - dotnet build KataGreatestCommonDivisor\KataGreatestCommonDivisor.sln
-  - dotnet build KataMoneyExchange\KataMoneyExchange.sln
-  - dotnet build KataPrimeFactors\KataPrimeFactors.sln
-  - dotnet build KataRomanNumerals\KataRomanNumerals.sln
-  - dotnet build KataSmallestInt\KataSmallestInt.sln
-  - dotnet build KataSorting\KataSorting.sln
-  - dotnet build KataStringCalculator\KataStringCalculator.sln
-  - dotnet build KataSupermarket\KataSupermarket.sln
+#  - dotnet build KataGameOfLife\KataGameOfLife.sln
+#  - dotnet build KataGreatestCommonDivisor\KataGreatestCommonDivisor.sln
+#  - dotnet build KataMoneyExchange\KataMoneyExchange.sln
+#  - dotnet build KataPrimeFactors\KataPrimeFactors.sln
+#  - dotnet build KataRomanNumerals\KataRomanNumerals.sln
+#  - dotnet build KataSmallestInt\KataSmallestInt.sln
+#  - dotnet build KataSorting\KataSorting.sln
+#  - dotnet build KataStringCalculator\KataStringCalculator.sln
+#  - dotnet build KataSupermarket\KataSupermarket.sln
 
 after_script:
   - nunit-console KataCombinatorics\KataCombinatorics.Tests\bin\Release\KataCombinatorics.Tests.dll
