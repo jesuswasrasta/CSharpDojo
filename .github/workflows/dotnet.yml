@@ -25,9 +25,8 @@ jobs:
       with:
         token: ${{ github.token }}
         files: |
-           new.txt
            KataCombinatorics
-    - name: KataCombinatorics -> Perform action only when files changes in KataCombinatorics/ directory
+#    - name: KataCombinatorics -> Perform action only when files changes in KataCombinatorics/ directory
       if: contains(steps.changed_files.outputs.changed_files, 'KataCombinatorics')
       run: |
         echo "Some files in KataCombinatorics/ directory has changed"
