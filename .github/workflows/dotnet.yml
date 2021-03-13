@@ -59,3 +59,10 @@ jobs:
     - name: KataMoneyExchange -> Test
       run: dotnet test KataMoneyExchange/KataMoneyExchange.sln --no-build --verbosity normal
 
+    - name: KataPrimeFactors -> Restore dependencies
+      run: dotnet restore KataPrimeFactors/KataPrimeFactors.sln
+    - name: KataPrimeFactors -> Build
+      run: dotnet build KataPrimeFactors/KataPrimeFactors.sln --no-restore
+    - name: KataPrimeFactors -> Test
+      run: dotnet test KataPrimeFactors/KataPrimeFactors.sln --no-build --verbosity normal
+

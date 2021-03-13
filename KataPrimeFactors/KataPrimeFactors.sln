@@ -7,13 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataPrimeFactors", "KataPri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataPrimeFactors.Tests", "KataPrimeFactors.Tests\KataPrimeFactors.Tests.csproj", "{FAFB3469-74DF-47C9-B8E5-7014B8C68E11}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{10F654E3-E782-4F8F-BFFC-8B2D8B0B5382}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D3E006A7-4B92-4903-BD8A-52B784D11FC4}"
 	ProjectSection(SolutionItems) = preProject
 		ReadMe.md = ReadMe.md
