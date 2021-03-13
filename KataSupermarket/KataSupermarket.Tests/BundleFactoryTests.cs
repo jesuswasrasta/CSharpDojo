@@ -1,13 +1,13 @@
 ﻿#region Usings
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using NUnit.Framework;
 
 
 #endregion
 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using NUnit.Framework;
 
 namespace KataSupermarket.Tests
 {
