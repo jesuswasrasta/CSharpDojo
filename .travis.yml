@@ -1,20 +1,22 @@
+os: linux
+dist: focal
 language: csharp
 #solution: KataSupermarket/KataSupermarket.sln
-dist: xenial
-mono: 
-  - latest
-sudo: required
-dotnet: 2.2
+mono: none
+dotnet: 3.1
 
 before_install:
   - sudo apt-get install nunit-console
-  - sudo apt-get install -qq dotnet-sdk-2.2
+#  - sudo apt-get install -qq dotnet-sdk-3.1
   - sudo apt-get install -qq nuget
 
+#install:
+#  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
+
 before_script:
-#  - dotnet restore KataCombinatorics/KataCombinatorics.sln
+  - dotnet restore KataCombinatorics/KataCombinatorics.sln
 #  - dotnet restore KataFibonacci/KataFibonacci.sln
-  - dotnet restore KataFizzBuzz/KataFizzBuzz.sln
+#  - dotnet restore KataFizzBuzz/KataFizzBuzz.sln
 #  - dotnet restore KataGameOfLife/KataGameOfLife.sln
 #  - dotnet restore KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln
 #  - dotnet restore KataMoneyExchange/KataMoneyExchange.sln
@@ -25,22 +27,22 @@ before_script:
 #  - dotnet restore KataStringCalculator/KataStringCalculator.sln
 #  - dotnet restore KataSupermarket/KataSupermarket.sln
   - nuget restore KataCombinatorics/KataCombinatorics.sln
-  - nuget restore KataFibonacci/KataFibonacci.sln
+#  - nuget restore KataFibonacci/KataFibonacci.sln
 #  - nuget restore KataFizzBuzz/KataFizzBuzz.sln
-  - nuget restore KataGameOfLife/KataGameOfLife.sln
-  - nuget restore KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln
-  - nuget restore KataMoneyExchange/KataMoneyExchange.sln
-  - nuget restore KataPrimeFactors/KataPrimeFactors.sln
-  - nuget restore KataRomanNumerals/KataRomanNumerals.sln
-  - nuget restore KataSmallestInt/KataSmallestInt.sln
-  - nuget restore KataSorting/KataSorting.sln
-  - nuget restore KataStringCalculator/KataStringCalculator.sln
-  - nuget restore KataSupermarket/KataSupermarket.sln
+#  - nuget restore KataGameOfLife/KataGameOfLife.sln
+#  - nuget restore KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln
+#  - nuget restore KataMoneyExchange/KataMoneyExchange.sln
+#  - nuget restore KataPrimeFactors/KataPrimeFactors.sln
+#  - nuget restore KataRomanNumerals/KataRomanNumerals.sln
+#  - nuget restore KataSmallestInt/KataSmallestInt.sln
+#  - nuget restore KataSorting/KataSorting.sln
+#  - nuget restore KataStringCalculator/KataStringCalculator.sln
+#  - nuget restore KataSupermarket/KataSupermarket.sln
 
 script:
-#  - dotnet build KataCombinatorics/KataCombinatorics.sln
+  - dotnet build KataCombinatorics/KataCombinatorics.sln
 #  - dotnet build KataFibonacci/KataFibonacci.sln
-  - dotnet build KataFizzBuzz/KataFizzBuzz.sln
+#  - dotnet build KataFizzBuzz/KataFizzBuzz.sln
 #  - dotnet build KataGameOfLife/KataGameOfLife.sln
 #  - dotnet build KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln
 #  - dotnet build KataMoneyExchange/KataMoneyExchange.sln
@@ -53,19 +55,16 @@ script:
 
 after_script:
   - nunit-console KataCombinatorics/KataCombinatorics.Tests/bin/Release/KataCombinatorics.Tests.dll
-  - nunit-console KataFibonacci/KataFibonacci.Tests/bin/Release/KataFibonacci.Tests.dll
-  - nunit-console KataFizzBuzz/KataFizzBuzz.Tests/bin/Release/KataFizzBuzz.Tests.dll
-  - nunit-console KataGameOfLife/KataGameOfLife.Tests/bin/Release/KataGameOfLife.Tests.dll
-  - nunit-console KataGreatestCommonDivisor/KataGreatestCommonDivisor.Tests/bin/Release/KataGreatestCommonDivisor.Tests.dll
-  - nunit-console KataMoneyExchange/KataMoneyExchange.Tests/bin/Release/KataMoneyExchange.Tests.dll
-  - nunit-console KataPrimeFactors/KataPrimeFactors.Tests/bin/Release/KataPrimeFactors.Tests.dll
-  - nunit-console KataRomanNumerals/KataRomanNumerals.Tests/bin/Release/KataRomanNumerals.Tests.dll
-  - nunit-console KataSmallestInt/KataSmallestInt.Tests/bin/Release/KataSmallestInt.Tests.dll
-  - nunit-console KataSorting/KataSorting.Tests/bin/Release/KataSorting.Tests.dll
-  - nunit-console KataStringCalculator/KataStringCalculator.Tests/bin/Release/KataStringCalculator.Tests.dll
-  - nunit-console KataSupermarket/KataSupermarket.Tests/bin/Release/KataSupermarket.Tests.dll
+#  - nunit-console KataFibonacci/KataFibonacci.Tests/bin/Release/KataFibonacci.Tests.dll
+#  - nunit-console KataFizzBuzz/KataFizzBuzz.Tests/bin/Release/KataFizzBuzz.Tests.dll
+#  - nunit-console KataGameOfLife/KataGameOfLife.Tests/bin/Release/KataGameOfLife.Tests.dll
+#  - nunit-console KataGreatestCommonDivisor/KataGreatestCommonDivisor.Tests/bin/Release/KataGreatestCommonDivisor.Tests.dll
+#  - nunit-console KataMoneyExchange/KataMoneyExchange.Tests/bin/Release/KataMoneyExchange.Tests.dll
+#  - nunit-console KataPrimeFactors/KataPrimeFactors.Tests/bin/Release/KataPrimeFactors.Tests.dll
+#  - nunit-console KataRomanNumerals/KataRomanNumerals.Tests/bin/Release/KataRomanNumerals.Tests.dll
+#  - nunit-console KataSmallestInt/KataSmallestInt.Tests/bin/Release/KataSmallestInt.Tests.dll
+#  - nunit-console KataSorting/KataSorting.Tests/bin/Release/KataSorting.Tests.dll
+#  - nunit-console KataStringCalculator/KataStringCalculator.Tests/bin/Release/KataStringCalculator.Tests.dll
+#  - nunit-console KataSupermarket/KataSupermarket.Tests/bin/Release/KataSupermarket.Tests.dll
 
-global:
-  - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
-  - DOTNET_CLI_TELEMETRY_OPTOUT=1
 
