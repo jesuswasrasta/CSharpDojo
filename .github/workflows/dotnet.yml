@@ -38,3 +38,10 @@ jobs:
     - name: KataFizzBuzz -> Test
       run: dotnet test KataFizzBuzz/KataFizzBuzz.sln --no-build --verbosity normal
 
+    - name: KataGameOfLife -> Restore dependencies
+      run: dotnet restore KataGameOfLife/KataGameOfLife.sln
+    - name: KataGameOfLife -> Build
+      run: dotnet build KataGameOfLife/KataGameOfLife.sln --no-restore
+    - name: KataGameOfLife -> Test
+      run: dotnet test KataGameOfLife/KataGameOfLife.sln --no-build --verbosity normal
+

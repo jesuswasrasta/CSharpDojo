@@ -27,12 +27,12 @@ namespace KataGameOfLife.Tests
 			Assert.IsTrue(cell.IsAlive);
 		}
 
-		[TestCase(0, Result = false)]
-		[TestCase(1, Result = false)]
-		[TestCase(4, Result = false)]
-		[TestCase(5, Result = false)]
-		[TestCase(2, Result = true)]
-		[TestCase(3, Result = true)]
+		[TestCase(0, ExpectedResult = false)]
+		[TestCase(1, ExpectedResult = false)]
+		[TestCase(4, ExpectedResult = false)]
+		[TestCase(5, ExpectedResult = false)]
+		[TestCase(2, ExpectedResult = true)]
+		[TestCase(3, ExpectedResult = true)]
 		public bool LivingCell_LivingNeighborsTests(int livingNeighBors)
 		{
 			var cell = Cell.NewLivingCell();
@@ -48,8 +48,8 @@ namespace KataGameOfLife.Tests
 			Assert.IsTrue(cell.IsAlive);
 		}
 
-		[TestCase('.', Result = false)]
-		[TestCase('O', Result = true)]
+		[TestCase('.', ExpectedResult = false)]
+		[TestCase('O', ExpectedResult = true)]
 		public bool Cell_FromChar_Tests(char aChar)
 		{
 			var cell = Cell.FromChar(aChar);
