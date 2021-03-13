@@ -17,6 +17,19 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.x
+
+    - name: KataCombinatorics -> Check if some files are changed
+      id: changed_files
+      uses: jackton1/find-changed-files@v1.1
+      with:
+        files: "KataCombinatorics"
+    - name: KataCombinatorics -> Check if some files are changed
+      if: steps.changed_files.outputs.files_changed == 'true'
+      run: |
+        dotnet restore KataCombinatorics/KataCombinatorics.sln
+        dotnet build KataCombinatorics/KataCombinatorics.sln --no-restore
+        dotnet test KataCombinatorics/KataCombinatorics.sln --no-build --verbosity normal
+
     - name: KataCombinatorics -> Restore dependencies
       run: dotnet restore KataCombinatorics/KataCombinatorics.sln
     - name: KataCombinatorics -> Build
