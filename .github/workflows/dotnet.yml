@@ -52,3 +52,10 @@ jobs:
     - name: KataGreatestCommonDivisor -> Test
       run: dotnet test KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln --no-build --verbosity normal
 
+    - name: KataMoneyExchange -> Restore dependencies
+      run: dotnet restore KataMoneyExchange/KataMoneyExchange.sln
+    - name: KataMoneyExchange -> Build
+      run: dotnet build KataMoneyExchange/KataMoneyExchange.sln --no-restore
+    - name: KataMoneyExchange -> Test
+      run: dotnet test KataMoneyExchange/KataMoneyExchange.sln --no-build --verbosity normal
+
