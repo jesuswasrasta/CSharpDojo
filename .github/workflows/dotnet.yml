@@ -66,3 +66,10 @@ jobs:
     - name: KataPrimeFactors -> Test
       run: dotnet test KataPrimeFactors/KataPrimeFactors.sln --no-build --verbosity normal
 
+    - name: KataRomanNumerals -> Restore dependencies
+      run: dotnet restore KataRomanNumerals/KataRomanNumerals.sln
+    - name: KataRomanNumerals -> Build
+      run: dotnet build KataRomanNumerals/KataRomanNumerals.sln --no-restore
+    - name: KataRomanNumerals -> Test
+      run: dotnet test KataRomanNumerals/KataRomanNumerals.sln --no-build --verbosity normal
+

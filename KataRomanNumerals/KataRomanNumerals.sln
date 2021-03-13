@@ -7,13 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataRomanNumerals", "KataRo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataRomanNumerals.Tests.Unit", "KataRomanNumerals.Tests.Unit\KataRomanNumerals.Tests.Unit.csproj", "{F229EB94-F441-4336-BB8D-7385FB81E455}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4A167762-F6F2-4741-A647-727D02CE52DE}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D2BB3894-D72D-4498-9F70-3AB54FA718B8}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
