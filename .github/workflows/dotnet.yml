@@ -73,3 +73,10 @@ jobs:
     - name: KataRomanNumerals -> Test
       run: dotnet test KataRomanNumerals/KataRomanNumerals.sln --no-build --verbosity normal
 
+    - name: KataSmallestInt -> Restore dependencies
+      run: dotnet restore KataSmallestInt/KataSmallestInt.sln
+    - name: KataSmallestInt -> Build
+      run: dotnet build KataSmallestInt/KataSmallestInt.sln --no-restore
+    - name: KataSmallestInt -> Test
+      run: dotnet test KataSmallestInt/KataSmallestInt.sln --no-build --verbosity normal
+
