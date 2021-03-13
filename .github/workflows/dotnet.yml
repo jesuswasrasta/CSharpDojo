@@ -45,3 +45,10 @@ jobs:
     - name: KataGameOfLife -> Test
       run: dotnet test KataGameOfLife/KataGameOfLife.sln --no-build --verbosity normal
 
+    - name: KataGreatestCommonDivisor -> Restore dependencies
+      run: dotnet restore KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln
+    - name: KataGreatestCommonDivisor -> Build
+      run: dotnet build KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln --no-restore
+    - name: KataGreatestCommonDivisor -> Test
+      run: dotnet test KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln --no-build --verbosity normal
+

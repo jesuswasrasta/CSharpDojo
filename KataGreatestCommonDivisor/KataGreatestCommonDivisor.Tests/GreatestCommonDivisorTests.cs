@@ -19,7 +19,7 @@ namespace KataGreatestCommonDivisor.Tests
 			/// <summary>
 			/// TestFixtureSetUp called once before any tests have been run in the same TestFixture
 			/// </summary>
-			[TestFixtureSetUp]
+			[SetUp]
 			public void FixtureSetUp()
 			{
 				// Set up code here.
@@ -28,7 +28,7 @@ namespace KataGreatestCommonDivisor.Tests
 			/// <summary>
 			/// TestFixtureTearDown called once after all tests have been run in the same TestFixture
 			/// </summary>
-			[TestFixtureTearDown]
+			[TearDown]
 			public void FixtureTearDown()
 			{
 				// Clear up code here.
