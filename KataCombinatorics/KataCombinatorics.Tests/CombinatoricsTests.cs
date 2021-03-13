@@ -73,7 +73,13 @@ namespace KataCombinatorics.Tests
 		{
 			ICombinatorics combinator = new Combinatorics();
 			var combinations = combinator.GetPermutation("pippo");
-			Assert.IsTrue(combinations.Any());
+
+			var combinationArray = combinations as string[] ?? combinations.ToArray();
+			foreach (var combination in combinationArray)
+			{
+				System.Console.WriteLine(combination);
+			}
+			Assert.IsTrue(combinationArray.Any());
 		}
 	}
 }
