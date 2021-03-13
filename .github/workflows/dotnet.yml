@@ -18,24 +18,29 @@ jobs:
       with:
         dotnet-version: 3.1.x
 
-    - name: KataCombinatorics -> Check if some files are changed
+#   KataCombinatorics
+    - name: KataCombinatorics
+      uses: tj-actions/verify-changed-files@v5.5
       id: changed_files
-      uses: jackton1/find-changed-files@v1.1
       with:
-        files: "KataCombinatorics"
-    - name: KataCombinatorics -> Check if some files are changed
-      if: steps.changed_files.outputs.files_changed == 'true'
+        token: ${{ github.token }}
+        files: |
+           new.txt
+           KataCombinatorics
+    - name: KataCombinatorics -> Perform action only when files changes in KataCombinatorics/ directory
+      if: contains(steps.changed_files.outputs.changed_files, 'KataCombinatorics')
       run: |
+        echo "Some files in KataCombinatorics/ directory has changed"
         dotnet restore KataCombinatorics/KataCombinatorics.sln
         dotnet build KataCombinatorics/KataCombinatorics.sln --no-restore
         dotnet test KataCombinatorics/KataCombinatorics.sln --no-build --verbosity normal
 
-    - name: KataCombinatorics -> Restore dependencies
-      run: dotnet restore KataCombinatorics/KataCombinatorics.sln
-    - name: KataCombinatorics -> Build
-      run: dotnet build KataCombinatorics/KataCombinatorics.sln --no-restore
-    - name: KataCombinatorics -> Test
-      run: dotnet test KataCombinatorics/KataCombinatorics.sln --no-build --verbosity normal
+#    - name: KataCombinatorics -> Restore dependencies
+#      run: dotnet restore KataCombinatorics/KataCombinatorics.sln
+#    - name: KataCombinatorics -> Build
+#      run: dotnet build KataCombinatorics/KataCombinatorics.sln --no-restore
+#    - name: KataCombinatorics -> Test
+#      run: dotnet test KataCombinatorics/KataCombinatorics.sln --no-build --verbosity normal
 
     - name: KataFibonacci -> Restore dependencies
       run: dotnet restore KataFibonacci/KataFibonacci.sln
