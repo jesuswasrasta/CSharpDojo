@@ -23,9 +23,18 @@ jobs:
       run: dotnet build KataCombinatorics/KataCombinatorics.sln --no-restore
     - name: KataCombinatorics -> Test
       run: dotnet test KataCombinatorics/KataCombinatorics.sln --no-build --verbosity normal
+
     - name: KataFibonacci -> Restore dependencies
       run: dotnet restore KataFibonacci/KataFibonacci.sln
     - name: KataFibonacci -> Build
       run: dotnet build KataFibonacci/KataFibonacci.sln --no-restore
     - name: KataFibonacci -> Test
       run: dotnet test KataFibonacci/KataFibonacci.sln --no-build --verbosity normal
+
+    - name: KataFizzBuzz -> Restore dependencies
+      run: dotnet restore KataFizzBuzz/KataFizzBuzz.sln
+    - name: KataFizzBuzz -> Build
+      run: dotnet build KataFizzBuzz/KataFizzBuzz.sln --no-restore
+    - name: KataFizzBuzz -> Test
+      run: dotnet test KataFizzBuzz/KataFizzBuzz.sln --no-build --verbosity normal
+
