@@ -87,3 +87,10 @@ jobs:
     - name: KataSorting -> Test
       run: dotnet test KataSorting/KataSorting.sln --no-build --verbosity normal
 
+    - name: KataStringCalculator -> Restore dependencies
+      run: dotnet restore KataStringCalculator/KataStringCalculator.sln
+    - name: KataStringCalculator -> Build
+      run: dotnet build KataStringCalculator/KataStringCalculator.sln --no-restore
+    - name: KataStringCalculator -> Test
+      run: dotnet test KataStringCalculator/KataStringCalculator.sln --no-build --verbosity normal
+
