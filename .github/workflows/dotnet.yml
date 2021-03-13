@@ -80,3 +80,10 @@ jobs:
     - name: KataSmallestInt -> Test
       run: dotnet test KataSmallestInt/KataSmallestInt.sln --no-build --verbosity normal
 
+    - name: KataSorting -> Restore dependencies
+      run: dotnet restore KataSorting/KataSorting.sln
+    - name: KataSorting -> Build
+      run: dotnet build KataSorting/KataSorting.sln --no-restore
+    - name: KataSorting -> Test
+      run: dotnet test KataSorting/KataSorting.sln --no-build --verbosity normal
+

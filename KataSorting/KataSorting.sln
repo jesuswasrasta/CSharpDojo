@@ -7,13 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataSorting", "KataSorting\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataSorting.Tests", "KataSorting.Tests\KataSorting.Tests.csproj", "{1DA6EE1A-F6D0-4ABE-9E97-988971A1C9B4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{96FB4C89-FE14-4F26-8543-711FE6C941D9}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1BF02FE9-F301-47BC-941B-8D5A340E1C7B}"
 	ProjectSection(SolutionItems) = preProject
 		ReadMe.md = ReadMe.md
