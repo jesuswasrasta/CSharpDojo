@@ -81,5 +81,8 @@ namespace KataCombinatorics.Tests
 			}
 			Assert.IsTrue(combinationArray.Any());
 		}
+		
+		
+		
 	}
 }
