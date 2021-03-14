@@ -30,6 +30,8 @@ jobs:
       if: contains(steps.changed_files.outputs.changed_files, 'KataCombinatorics')
       run: |
         echo "Some files in KataCombinatorics/ directory has changed"
+        echo "Changed files: ${{ steps.changed_files.outputs.changed_files }}"
+
         dotnet restore KataCombinatorics/KataCombinatorics.sln
         dotnet build KataCombinatorics/KataCombinatorics.sln --no-restore
         dotnet test KataCombinatorics/KataCombinatorics.sln --no-build --verbosity normal
@@ -41,80 +43,80 @@ jobs:
 #    - name: KataCombinatorics -> Test
 #      run: dotnet test KataCombinatorics/KataCombinatorics.sln --no-build --verbosity normal
 
-    - name: KataFibonacci -> Restore dependencies
-      run: dotnet restore KataFibonacci/KataFibonacci.sln
-    - name: KataFibonacci -> Build
-      run: dotnet build KataFibonacci/KataFibonacci.sln --no-restore
-    - name: KataFibonacci -> Test
-      run: dotnet test KataFibonacci/KataFibonacci.sln --no-build --verbosity normal
+#    - name: KataFibonacci -> Restore dependencies
+#      run: dotnet restore KataFibonacci/KataFibonacci.sln
+#    - name: KataFibonacci -> Build
+#      run: dotnet build KataFibonacci/KataFibonacci.sln --no-restore
+#    - name: KataFibonacci -> Test
+#      run: dotnet test KataFibonacci/KataFibonacci.sln --no-build --verbosity normal
 
-    - name: KataFizzBuzz -> Restore dependencies
-      run: dotnet restore KataFizzBuzz/KataFizzBuzz.sln
-    - name: KataFizzBuzz -> Build
-      run: dotnet build KataFizzBuzz/KataFizzBuzz.sln --no-restore
-    - name: KataFizzBuzz -> Test
-      run: dotnet test KataFizzBuzz/KataFizzBuzz.sln --no-build --verbosity normal
+#    - name: KataFizzBuzz -> Restore dependencies
+#      run: dotnet restore KataFizzBuzz/KataFizzBuzz.sln
+#    - name: KataFizzBuzz -> Build
+#      run: dotnet build KataFizzBuzz/KataFizzBuzz.sln --no-restore
+#    - name: KataFizzBuzz -> Test
+#      run: dotnet test KataFizzBuzz/KataFizzBuzz.sln --no-build --verbosity normal
 
-    - name: KataGameOfLife -> Restore dependencies
-      run: dotnet restore KataGameOfLife/KataGameOfLife.sln
-    - name: KataGameOfLife -> Build
-      run: dotnet build KataGameOfLife/KataGameOfLife.sln --no-restore
-    - name: KataGameOfLife -> Test
-      run: dotnet test KataGameOfLife/KataGameOfLife.sln --no-build --verbosity normal
+#    - name: KataGameOfLife -> Restore dependencies
+#      run: dotnet restore KataGameOfLife/KataGameOfLife.sln
+#    - name: KataGameOfLife -> Build
+#      run: dotnet build KataGameOfLife/KataGameOfLife.sln --no-restore
+#    - name: KataGameOfLife -> Test
+#      run: dotnet test KataGameOfLife/KataGameOfLife.sln --no-build --verbosity normal
 
-    - name: KataGreatestCommonDivisor -> Restore dependencies
-      run: dotnet restore KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln
-    - name: KataGreatestCommonDivisor -> Build
-      run: dotnet build KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln --no-restore
-    - name: KataGreatestCommonDivisor -> Test
-      run: dotnet test KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln --no-build --verbosity normal
+#    - name: KataGreatestCommonDivisor -> Restore dependencies
+#      run: dotnet restore KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln
+#    - name: KataGreatestCommonDivisor -> Build
+#      run: dotnet build KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln --no-restore
+#    - name: KataGreatestCommonDivisor -> Test
+#      run: dotnet test KataGreatestCommonDivisor/KataGreatestCommonDivisor.sln --no-build --verbosity normal
 
-    - name: KataMoneyExchange -> Restore dependencies
-      run: dotnet restore KataMoneyExchange/KataMoneyExchange.sln
-    - name: KataMoneyExchange -> Build
-      run: dotnet build KataMoneyExchange/KataMoneyExchange.sln --no-restore
-    - name: KataMoneyExchange -> Test
-      run: dotnet test KataMoneyExchange/KataMoneyExchange.sln --no-build --verbosity normal
+#    - name: KataMoneyExchange -> Restore dependencies
+#      run: dotnet restore KataMoneyExchange/KataMoneyExchange.sln
+#    - name: KataMoneyExchange -> Build
+#      run: dotnet build KataMoneyExchange/KataMoneyExchange.sln --no-restore
+#    - name: KataMoneyExchange -> Test
+#      run: dotnet test KataMoneyExchange/KataMoneyExchange.sln --no-build --verbosity normal
 
-    - name: KataPrimeFactors -> Restore dependencies
-      run: dotnet restore KataPrimeFactors/KataPrimeFactors.sln
-    - name: KataPrimeFactors -> Build
-      run: dotnet build KataPrimeFactors/KataPrimeFactors.sln --no-restore
-    - name: KataPrimeFactors -> Test
-      run: dotnet test KataPrimeFactors/KataPrimeFactors.sln --no-build --verbosity normal
+#    - name: KataPrimeFactors -> Restore dependencies
+#      run: dotnet restore KataPrimeFactors/KataPrimeFactors.sln
+#    - name: KataPrimeFactors -> Build
+#      run: dotnet build KataPrimeFactors/KataPrimeFactors.sln --no-restore
+#    - name: KataPrimeFactors -> Test
+#      run: dotnet test KataPrimeFactors/KataPrimeFactors.sln --no-build --verbosity normal
 
-    - name: KataRomanNumerals -> Restore dependencies
-      run: dotnet restore KataRomanNumerals/KataRomanNumerals.sln
-    - name: KataRomanNumerals -> Build
-      run: dotnet build KataRomanNumerals/KataRomanNumerals.sln --no-restore
-    - name: KataRomanNumerals -> Test
-      run: dotnet test KataRomanNumerals/KataRomanNumerals.sln --no-build --verbosity normal
+#    - name: KataRomanNumerals -> Restore dependencies
+#      run: dotnet restore KataRomanNumerals/KataRomanNumerals.sln
+#    - name: KataRomanNumerals -> Build
+#      run: dotnet build KataRomanNumerals/KataRomanNumerals.sln --no-restore
+#    - name: KataRomanNumerals -> Test
+#      run: dotnet test KataRomanNumerals/KataRomanNumerals.sln --no-build --verbosity normal
 
-    - name: KataSmallestInt -> Restore dependencies
-      run: dotnet restore KataSmallestInt/KataSmallestInt.sln
-    - name: KataSmallestInt -> Build
-      run: dotnet build KataSmallestInt/KataSmallestInt.sln --no-restore
-    - name: KataSmallestInt -> Test
-      run: dotnet test KataSmallestInt/KataSmallestInt.sln --no-build --verbosity normal
+#    - name: KataSmallestInt -> Restore dependencies
+#      run: dotnet restore KataSmallestInt/KataSmallestInt.sln
+#    - name: KataSmallestInt -> Build
+#      run: dotnet build KataSmallestInt/KataSmallestInt.sln --no-restore
+#    - name: KataSmallestInt -> Test
+#      run: dotnet test KataSmallestInt/KataSmallestInt.sln --no-build --verbosity normal
 
-    - name: KataSorting -> Restore dependencies
-      run: dotnet restore KataSorting/KataSorting.sln
-    - name: KataSorting -> Build
-      run: dotnet build KataSorting/KataSorting.sln --no-restore
-    - name: KataSorting -> Test
-      run: dotnet test KataSorting/KataSorting.sln --no-build --verbosity normal
+#    - name: KataSorting -> Restore dependencies
+#      run: dotnet restore KataSorting/KataSorting.sln
+#    - name: KataSorting -> Build
+#      run: dotnet build KataSorting/KataSorting.sln --no-restore
+#    - name: KataSorting -> Test
+#      run: dotnet test KataSorting/KataSorting.sln --no-build --verbosity normal
 
-    - name: KataStringCalculator -> Restore dependencies
-      run: dotnet restore KataStringCalculator/KataStringCalculator.sln
-    - name: KataStringCalculator -> Build
-      run: dotnet build KataStringCalculator/KataStringCalculator.sln --no-restore
-    - name: KataStringCalculator -> Test
-      run: dotnet test KataStringCalculator/KataStringCalculator.sln --no-build --verbosity normal
+#    - name: KataStringCalculator -> Restore dependencies
+#      run: dotnet restore KataStringCalculator/KataStringCalculator.sln
+#    - name: KataStringCalculator -> Build
+#      run: dotnet build KataStringCalculator/KataStringCalculator.sln --no-restore
+#    - name: KataStringCalculator -> Test
+#      run: dotnet test KataStringCalculator/KataStringCalculator.sln --no-build --verbosity normal
 
-    - name: KataSupermarket -> Restore dependencies
-      run: dotnet restore KataSupermarket/KataSupermarket.sln
-    - name: KataSupermarket -> Build
-      run: dotnet build KataSupermarket/KataSupermarket.sln --no-restore
-    - name: KataSupermarket -> Test
-      run: dotnet test KataSupermarket/KataSupermarket.sln --no-build --verbosity normal
+#    - name: KataSupermarket -> Restore dependencies
+#      run: dotnet restore KataSupermarket/KataSupermarket.sln
+#    - name: KataSupermarket -> Build
+#      run: dotnet build KataSupermarket/KataSupermarket.sln --no-restore
+#    - name: KataSupermarket -> Test
+#      run: dotnet test KataSupermarket/KataSupermarket.sln --no-build --verbosity normal
 
