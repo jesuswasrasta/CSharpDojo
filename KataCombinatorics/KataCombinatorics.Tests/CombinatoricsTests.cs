@@ -83,10 +83,5 @@ namespace KataCombinatorics.Tests
 		}
 		
 		
-		
-		
-		
-		
-		
 	}
 }
