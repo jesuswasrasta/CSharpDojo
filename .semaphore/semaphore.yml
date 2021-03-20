@@ -31,11 +31,8 @@ blocks:
   - name: 'Restore, Build, Test'
     dependencies:
       - Checkout
-      - Setup
     task:
-      env_vars:
-        - name: FOO_1
-          value: BAR_1
+      env_vars: []
       jobs:
         - name: KataCombinatorics
           commands:
