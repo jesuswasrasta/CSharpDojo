@@ -27,3 +27,18 @@ blocks:
             - sudo apt-get install -y apt-transport-https
             - sudo apt-get update
             - sudo apt-get install -y dotnet-sdk-5.0
+  - name: 'Restore, Build, Test'
+    dependencies:
+      - Checkout
+    task:
+      env_vars:
+        - name: FOO_1
+          value: BAR_1
+      jobs:
+        - name: KataCombinatorics
+          commands:
+            - dotnet restore KataCombinatorics/KataCombinatorics.sln
+            - dotnet build KataCombinatorics/KataCombinatorics.sln --no-restore
+            - dotnet test KataCombinatorics/KataCombinatorics.sln --no-build --verbosity normal
+        - name: 'Job #2'
+          commands: []
